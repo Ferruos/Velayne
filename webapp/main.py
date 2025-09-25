@@ -22,7 +22,5 @@ def subs():
 @app.get("/blend")
 def blend():
     from core.blend.blend_manager import BlendManager
-    import os
-    redis_url = os.getenv("REDIS_URL", "redis://localhost:6379/0")
-    bm = BlendManager(redis_url)
+    bm = BlendManager()
     return bm.get_current_blend()

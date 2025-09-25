@@ -12,8 +12,7 @@ def get_historical_data():
 
 def main():
     load_dotenv()
-    redis_url = os.getenv("REDIS_URL", "redis://localhost:6379/0")
-    blend_manager = BlendManager(redis_url)
+    blend_manager = BlendManager()  # Без redis_url
     historical_data = get_historical_data()
     try:
         result = optimize_blend(historical_data, STRATEGY_CLASSES, n_trials=4)

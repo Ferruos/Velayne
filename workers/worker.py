@@ -1,11 +1,8 @@
-import os
 import time
 from dotenv import load_dotenv
 from core.blend.blend_manager import BlendManager
-from core.portfolio import PortfolioManager
 from services.logging import get_logger
-
-logger = get_logger("worker")
+from core.portfolio import PortfolioManager
 
 class Plan:
     max_order_size = 0.05
@@ -17,10 +14,11 @@ def get_market_data():
     base = 100
     return {"close": [base + random.uniform(-2, 2) for _ in range(30)]}
 
+logger = get_logger("worker")
+
 def main():
     load_dotenv()
-    redis_url = os.getenv("REDIS_URL", "redis://localhost:6379/0")
-    blend_manager = BlendManager(redis_url)
+    blend_manager = BlendManager()
     plan = Plan()
     portfolio = PortfolioManager(blend_manager, plan)
     logger.info("Воркер: ожидаю blend и эмулирую торговлю...")
