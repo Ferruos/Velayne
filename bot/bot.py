@@ -13,9 +13,9 @@ logger = get_logger("tg")
 
 # Импортируем все хендлеры (оферта, pay, demo, стратегии, etc)
 from bot.handlers import register_handlers
-from bot.handlers_payment import *
-from bot.handlers_strategies import *
-from bot.handlers_demo import *
+from bot.handlers_payment import *  # noqa
+from bot.handlers_strategies import *  # noqa
+from bot.handlers_demo import *  # noqa
 
 register_handlers(dp)
 

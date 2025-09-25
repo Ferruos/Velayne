@@ -30,6 +30,11 @@ def get_historical_data(symbol: str = "BTC/USDT", timeframe: str = "1h",
     Загружает исторические свечи через ExchangeAdapter.
     Биржа, ключи и режим тест/лайв берутся из .env:
       EXCHANGE_NAME, EXCHANGE_API_KEY, EXCHANGE_API_SECRET, EXCHANGE_IS_LIVE.
+
+    :param symbol: Тикер, например 'BTC/USDT'
+    :param timeframe: Интервал свечей, например '1h'
+    :param limit: Количество свечей
+    :return: список с одним словарём {'close': [prices...]}
     """
     name = os.getenv("EXCHANGE_NAME", "bybit").lower()
     api_key = os.getenv("EXCHANGE_API_KEY", "")

@@ -48,6 +48,7 @@ class ExchangeAdapter:
         :param symbol: Тикер, например 'BTC/USDT'
         :param timeframe: Интервал свечей (1m, 1h, 1d и т.д.)
         :param limit: Число свечей
+        :return: Dict с ключом 'close' и списком цен закрытия
         """
         ohlcv = self.exchange.fetch_ohlcv(symbol, timeframe=timeframe, limit=limit)
         closes = [entry[4] for entry in ohlcv]
@@ -64,6 +65,7 @@ class ExchangeAdapter:
         :param amount: Количество
         :param price: Цена для лимит‑ордера; игнорируется для маркет‑ордера
         :param order_type: 'market' или 'limit'
+        :return: результат вызова ccxt
         """
         side = side.lower()
         if order_type.lower() == "market":
