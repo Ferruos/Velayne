@@ -10,7 +10,6 @@ def create_payment(user_id, amount, currency="RUB"):
         return payment.id
 
 def check_yoomoney_payment(payment_id):
-    # Без токена — всегда возвращает False (или подставь свою dev-логику)
     print("Юкасса токен не задан. Проверка оплаты невозможна.")
     return False
 
