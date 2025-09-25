@@ -1,14 +1,4 @@
-aiogram
-fastapi
-uvicorn
-sqlmodel
-sqlalchemy
-cryptography
-pydantic
-matplotlib
-scikit-learn
-optuna
-ccxt
-watchdog
-python-dotenv
-aiohttp
+feedparser
+transformers
+torch
+# и другие реальные зависимости
