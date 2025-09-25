@@ -1,0 +1,30 @@
+{
+  "version": null,
+  "components": [
+    {
+      "name": "EMA",
+      "params": {},
+      "weight": 0.928387966219467
+    },
+    {
+      "name": "MeanReversion",
+      "params": {
+        "window": 18.615334292257543,
+        "threshold": 0.08031516837795087
+      },
+      "weight": 0.4205854295318807
+    },
+    {
+      "name": "Breakout",
+      "params": {
+        "window": 14.74896066235701
+      },
+      "weight": 0.815763158965296
+    }
+  ],
+  "metrics": {
+    "score": 1.1
+  },
+  "regime": "trend",
+  "created_at": "2025-09-25T07:39:11.477151"
+}
