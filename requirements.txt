@@ -1,4 +1,0 @@
-feedparser
-transformers
-torch
-# и другие реальные зависимости
