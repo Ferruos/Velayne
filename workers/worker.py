@@ -1,6 +1,12 @@
 import os
 import time
-from dotenv import load_dotenv
+# Загружаем .env; если python-dotenv не установлен, определяем заглушку
+try:
+    from dotenv import load_dotenv  # type: ignore
+except ImportError:
+    def load_dotenv(*args, **kwargs):
+        return None
+
 from core.blend.blend_manager import BlendManager
 from core.portfolio import PortfolioManager
 from core.execution import Executor

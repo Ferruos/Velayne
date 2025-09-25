@@ -1,5 +1,11 @@
 import os
-from dotenv import load_dotenv
+# Загружаем .env; если python-dotenv не установлен, объявляем заглушку
+try:
+    from dotenv import load_dotenv  # type: ignore
+except ImportError:
+    def load_dotenv(*args, **kwargs):
+        return None
+
 from aiogram import Bot, Dispatcher, types, executor
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from services.logging import get_logger
@@ -25,5 +31,5 @@ async def handle_errors(update, exception):
     return True
 
 if __name__ == "__main__":
-    logger.info("Запуск Telegram-бота...")
+    logger.info("Запуск Telegram-бота…")
     executor.start_polling(dp, skip_updates=True)

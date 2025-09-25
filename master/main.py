@@ -10,7 +10,15 @@ import os
 import sys
 from typing import List, Dict, Any
 
-from dotenv import load_dotenv
+# Загружаем .env; если python-dotenv не установлен, определяем заглушку
+default_env_loaded = False
+try:
+    from dotenv import load_dotenv  # type: ignore
+except ImportError:
+    def load_dotenv(*args, **kwargs):
+        return None
+else:
+    default_env_loaded = True
 
 # Добавляем корень проекта в sys.path, чтобы модули 'core' импортировались корректно
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), ".")))
@@ -49,6 +57,7 @@ def main() -> None:
     """
     Загружает .env, тянет данные, оптимизирует бленд и публикует его.
     """
+    # Загружаем переменные окружения из .env
     load_dotenv()
     blend_manager = BlendManager()
     historical_data = get_historical_data()
