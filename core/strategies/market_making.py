@@ -1,12 +1,13 @@
-from .base import StrategyBase
+"""
+Light Market Making: выставляет лимитки возле средней цены, не агрессивно.
+"""
+import numpy as np
 
-class MarketMakingStrategy(StrategyBase):
-    name = "MarketMaking"
-    param_space = ["spread"]
-
-    def generate_signal(self, market_data):
-        # Лёгкий маркет-мейкинг: всегда лимитки buy и sell вокруг цены
-        # Для демо возвращаем оба направления (реализация зависит от ядра)
-        spread = float(self.params.get("spread", 0.001))
-        last = market_data["close"][-1]
-        return {"action": "both", "buy_price": last * (1 - spread), "sell_price": last * (1 + spread)}
+def market_making_signal(prices, spread=0.002):
+    prices = np.array(prices)
+    if len(prices) < 2:
+        return 0, 0
+    mid = prices[-1]
+    buy_price = mid * (1 - spread)
+    sell_price = mid * (1 + spread)
+    return buy_price, sell_price

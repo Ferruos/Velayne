@@ -1,19 +1,20 @@
-from .base import StrategyBase
+"""
+Mean Reversion strategy: генерирует сигналы на возврат к среднему.
+"""
+import numpy as np
 
-class MeanReversionStrategy(StrategyBase):
-    name = "MeanReversion"
-    param_space = ["window", "threshold"]
-
-    def generate_signal(self, market_data):
-        prices = market_data["close"]
-        window = int(self.params.get("window", 10))
-        threshold = float(self.params.get("threshold", 0.02))
-        mean = sum(prices[-window:]) / window
-        last = prices[-1]
-        deviation = (last - mean) / mean
-        if deviation < -threshold:
-            return {"action": "buy"}
-        elif deviation > threshold:
-            return {"action": "sell"}
-        else:
-            return {"action": "hold"}
+def mean_reversion_signal(prices, window=20, threshold=2):
+    prices = np.array(prices)
+    if len(prices) < window:
+        return np.zeros_like(prices)
+    ma = np.convolve(prices, np.ones(window)/window, mode='valid')
+    std = np.std(prices[-window:])
+    signal = np.zeros(len(prices))
+    zscore = (prices[-1] - ma[-1]) / (std + 1e-8)
+    if zscore > threshold:
+        signal[-1] = -1  # Sell
+    elif zscore < -threshold:
+        signal[-1] = 1   # Buy
+    else:
+        signal[-1] = 0
+    return signal

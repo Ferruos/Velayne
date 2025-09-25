@@ -1,26 +1,9 @@
-"""
-FastAPI-заготовка для дашборда, просмотра пользователей, подписок, blend.
-"""
+import sys, os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from fastapi import FastAPI
 
 app = FastAPI()
 
 @app.get("/")
 def root():
-    return {"msg": "Velayne Web Dashboard"}
-
-@app.get("/users")
-def users():
-    from storage.repositories import USERS
-    return list(USERS.values())
-
-@app.get("/subs")
-def subs():
-    from storage.repositories import SUBS
-    return list(SUBS.values())
-
-@app.get("/blend")
-def blend():
-    from core.blend.blend_manager import BlendManager
-    bm = BlendManager()
-    return bm.get_current_blend()
+    return {"status": "Velayne bot is running"}

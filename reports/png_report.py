@@ -1,28 +1,28 @@
+"""
+Генерирует PNG-отчет: баланс, PnL, сделки win/loss, разбивка по стратегиям blend.
+"""
 import matplotlib.pyplot as plt
-import numpy as np
-import datetime, os
+import os
 
-def make_daily_report(user_id, report_data):
-    plt.figure(figsize=(8, 6))
-    pnl = report_data.get('pnl', [])
-    dates = report_data.get('dates', [])
-    deals = report_data.get('deals', [])
-    win = sum(1 for d in deals if d['pnl'] > 0)
-    loss = sum(1 for d in deals if d['pnl'] <= 0)
-    best = max(deals, key=lambda d: d['pnl'], default={})
-    worst = min(deals, key=lambda d: d['pnl'], default={})
-    by_strategy = report_data.get('by_strategy', {})
-    plt.subplot(211)
-    plt.plot(dates, pnl, label="PnL")
-    plt.title(f"User {user_id} {datetime.date.today()} {report_data.get('mode','')}")
-    plt.ylabel("Доходность")
-    plt.legend()
-    plt.subplot(212)
-    plt.bar(list(by_strategy.keys()), list(by_strategy.values()))
-    plt.title(f"Разбивка по стратегиям. Win: {win}, Loss: {loss}")
+def make_daily_report(user_id, data, out_dir="reports/"):
+    fig, ax = plt.subplots(figsize=(7, 5))
+    ax.plot(data["dates"], data["balance"], label="Balance", color="blue")
+    ax.set_title(f"User {user_id} Daily Report")
+    ax.set_xlabel("Date")
+    ax.set_ylabel("Balance")
+    ax.legend()
+    # Добавим win/loss
+    if "trades" in data:
+        win = sum(1 for t in data["trades"] if t["pnl"] > 0)
+        loss = sum(1 for t in data["trades"] if t["pnl"] <= 0)
+        ax.text(0.02, 0.95, f"Wins: {win}, Losses: {loss}", transform=ax.transAxes)
+    # Разбивка по стратегиям
+    if "blend" in data:
+        s = "\n".join([f"{k}: {v}" for k, v in data["blend"].items()])
+        ax.text(0.7, 0.5, s, transform=ax.transAxes, bbox=dict(facecolor='yellow', alpha=0.2))
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, f"report_{user_id}.png")
     plt.tight_layout()
-    os.makedirs("reports", exist_ok=True)
-    path = f"reports/{user_id}_daily.png"
     plt.savefig(path)
-    plt.close()
+    plt.close(fig)
     return path
