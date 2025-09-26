@@ -1,0 +1,21 @@
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | logs
+  | data
+)/
+'''
+
+[tool.ruff]
+select = ["E", "F", "I"]
+line-length = 100
+exclude = [".venv", "logs", "data"]
+
+[tool.mypy]
+python_version = "3.11"
+warn_unused_ignores = true
+exclude = '(\.venv|logs|data)'

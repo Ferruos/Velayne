@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Cache pip
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+      - name: Install dependencies
+        run: |
+          python -m venv .venv
+          . .venv/bin/activate
+          pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Ruff
+        run: . .venv/bin/activate && ruff check .
+      - name: Black
+        run: . .venv/bin/activate && black --check .
+      - name: Mypy
+        run: . .venv/bin/activate && mypy velayne
+      - name: Bandit
+        run: . .venv/bin/activate && bandit -q -r velayne -x tests
+      - name: Pytest
+        run: . .venv/bin/activate && pytest -q
+      - name: Selftest
+        run: . .venv/bin/activate && python -m velayne.run --selftest
+      - name: Package (dry-run)
+        run: bash scripts/package.sh dry-run
+      - name: Archive release
+        uses: actions/upload-artifact@v4
+        with:
+          name: velayne-release
+          path: dist/velayne*.zip
