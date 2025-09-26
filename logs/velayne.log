@@ -1,0 +1,1341 @@
+[2025-09-26 21:17:17,767] INFO velayne.infra.logger: File logging enabled at C:\Users\Admin\Documents\GitHub\Velayne\logs\velayne.log
+[2025-09-26 21:17:18,078] INFO root: Service mode: sandbox
+[2025-09-26 21:17:19,434] INFO root: [SCHEDULER] scheduler alive 2025-09-26T17:17:19.434640
+[2025-09-26 21:17:19,733] INFO root: [HEARTBEAT] service alive
+[2025-09-26 21:17:20,152] INFO root: [BOT] ON as @Velayne_Bot (id=8291187695)
+[2025-09-26 21:17:20,345] INFO root: [BOT] routing: user=ON, admin=ON
+[2025-09-26 21:17:20,346] INFO aiogram.dispatcher: Start polling
+[2025-09-26 21:17:20,411] INFO aiogram.dispatcher: Run polling for bot @Velayne_Bot id=8291187695 - 'Velayne Bot'
+[2025-09-26 21:17:20,481] INFO root: [UPDATE] Update /diag
+[2025-09-26 21:17:20,483] INFO root: [UPDATE] Update /help
+[2025-09-26 21:17:20,484] INFO root: [UPDATE] Update /start
+[2025-09-26 21:17:20,484] INFO root: [UPDATE] Update /ping
+[2025-09-26 21:17:20,484] INFO root: [UPDATE] Update /ping
+[2025-09-26 21:17:20,714] INFO aiogram.event: Update id=956956498 is handled. Duration 218 ms by bot id=8291187695
+[2025-09-26 21:17:20,744] INFO aiogram.event: Update id=956956496 is handled. Duration 265 ms by bot id=8291187695
+[2025-09-26 21:17:20,775] INFO aiogram.event: Update id=956956499 is handled. Duration 281 ms by bot id=8291187695
+[2025-09-26 21:17:20,805] INFO aiogram.event: Update id=956956500 is handled. Duration 311 ms by bot id=8291187695
+[2025-09-26 21:17:20,839] INFO aiogram.event: Update id=956956497 is handled. Duration 359 ms by bot id=8291187695
+[2025-09-26 21:17:29,727] INFO root: [HEARTBEAT] service alive
+[LAUNCH] --- Velayne Unified Start at 2025-09-26T17:34:44.750415 ---
+[LAUNCH] Components: sandbox=ON, scheduler=ON, bot=ON
+[WATCHDOG] Starting scheduler (restart 0)
+[WATCHDOG] Starting sandbox (restart 0)
+[WATCHDOG] Starting bot (restart 0)
+Bot polling started (aiogram 3.x)
+[LAUNCH] RUNNING — Ctrl+C to stop
+WARNING:ccxt.base.exchange:binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000021367627A50>
+WARNING:ccxt.base.exchange:binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000021367627310>
+WARNING:ccxt.base.exchange:binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002136BEF2A90>
+WARNING:ccxt.base.exchange:binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002136EE98D10>
+WARNING:ccxt.base.exchange:binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002136D2849D0>
+WARNING:ccxt.base.exchange:binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002136D425450>
+WARNING:ccxt.base.exchange:binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002136DCD4350>
+WARNING:ccxt.base.exchange:binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002136D13DCD0>
+WARNING:ccxt.base.exchange:binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002136B4D93D0>
+WARNING:ccxt.base.exchange:binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002136D0A8810>
+WARNING:ccxt.base.exchange:binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002136B554C10>
+ERROR:asyncio:Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002136AE06F90>, 12062.359)])']
+connector: <aiohttp.connector.TCPConnector object at 0x000002136E6E0890>
+WARNING:ccxt.base.exchange:binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002136E385050>
+WARNING:ccxt.base.exchange:binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002136EEE6BD0>
+WARNING:ccxt.base.exchange:binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002136E642ED0>
+WARNING:ccxt.base.exchange:binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002136B25D110>
+WARNING:ccxt.base.exchange:binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002136BB05510>
+WARNING:ccxt.base.exchange:binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002136B926990>
+WARNING:ccxt.base.exchange:binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002136DEACC50>
+WARNING:ccxt.base.exchange:binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002136B4D3B90>
+WARNING:ccxt.base.exchange:binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002136E974D90>
+WARNING:ccxt.base.exchange:binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002136E1807D0>
+WARNING:ccxt.base.exchange:binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002136D23ED90>
+WARNING:ccxt.base.exchange:binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002136EB34FD0>
+ERROR:asyncio:Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002136AE9D9B0>, 12422.062)])']
+connector: <aiohttp.connector.TCPConnector object at 0x000002136E974CD0>
+WARNING:ccxt.base.exchange:binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002136D287350>
+WARNING:ccxt.base.exchange:binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002136EA86D50>
+WARNING:ccxt.base.exchange:binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002136B43C890>
+ERROR:asyncio:Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002136AE9C750>, 12512.078)])']
+connector: <aiohttp.connector.TCPConnector object at 0x000002136B43CF90>
+WARNING:ccxt.base.exchange:binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002136BD44A50>
+WARNING:ccxt.base.exchange:binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002136E510B50>
+ERROR:asyncio:Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002136AE9CE50>, 12572.109)])']
+connector: <aiohttp.connector.TCPConnector object at 0x000002136E510CD0>
+[26.09.2025 21:49:13] [INFO] [run] Режим сервиса: sandbox
+[26.09.2025 21:49:13] [INFO] [run] [WATCHDOG] Запуск scheduler (рестарт #0)
+[26.09.2025 21:49:13] [INFO] [base] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[26.09.2025 21:49:13] [INFO] [scheduler] [ШЕДУЛЕР] Задание 'fetch_market_data' добавлено.
+[26.09.2025 21:49:13] [INFO] [base] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[26.09.2025 21:49:13] [INFO] [scheduler] [ШЕДУЛЕР] Задание 'train_models' добавлено.
+[26.09.2025 21:49:13] [INFO] [base] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[26.09.2025 21:49:13] [INFO] [scheduler] [ШЕДУЛЕР] Задание 'heartbeat' добавлено.
+[26.09.2025 21:49:13] [INFO] [base] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[26.09.2025 21:49:13] [INFO] [scheduler] [ШЕДУЛЕР] Задание 'expire_subs' добавлено.
+[26.09.2025 21:49:13] [INFO] [base] Added job "fetch_market_data" to job store "default"
+[26.09.2025 21:49:13] [INFO] [base] Added job "train_models" to job store "default"
+[26.09.2025 21:49:13] [INFO] [base] Added job "heartbeat" to job store "default"
+[26.09.2025 21:49:13] [INFO] [base] Added job "expire_subs" to job store "default"
+[26.09.2025 21:49:13] [INFO] [base] Scheduler started
+[26.09.2025 21:49:13] [INFO] [scheduler] [ШЕДУЛЕР] Запуск APScheduler с jobstore SQLite.
+[26.09.2025 21:49:13] [INFO] [run] [WATCHDOG] Запуск sandbox (рестарт #0)
+[26.09.2025 21:49:14] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 21:49:14] [INFO] [run] [WATCHDOG] Запуск heartbeat (рестарт #0)
+[26.09.2025 21:49:14] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:49:14] [INFO] [run] [WATCHDOG] Запуск bot (рестарт #0)
+[26.09.2025 21:49:15] [ERROR] [run] [WATCHDOG] bot аварийно завершился: DefaultBotProperties.__init__() got an unexpected keyword argument 'disable_web_page_preview' (рестарт 1/5)
+[26.09.2025 21:49:15] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:49:18] [INFO] [run] [WATCHDOG] Запуск bot (рестарт #1)
+[26.09.2025 21:49:18] [ERROR] [run] [WATCHDOG] bot аварийно завершился: DefaultBotProperties.__init__() got an unexpected keyword argument 'disable_web_page_preview' (рестарт 2/5)
+[26.09.2025 21:49:21] [INFO] [run] [WATCHDOG] Запуск bot (рестарт #2)
+[26.09.2025 21:49:21] [ERROR] [run] [WATCHDOG] bot аварийно завершился: DefaultBotProperties.__init__() got an unexpected keyword argument 'disable_web_page_preview' (рестарт 3/5)
+[26.09.2025 21:49:24] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:49:24] [INFO] [run] [WATCHDOG] Запуск bot (рестарт #3)
+[26.09.2025 21:49:24] [ERROR] [run] [WATCHDOG] bot аварийно завершился: DefaultBotProperties.__init__() got an unexpected keyword argument 'disable_web_page_preview' (рестарт 4/5)
+[26.09.2025 21:49:25] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:49:27] [INFO] [run] [WATCHDOG] Запуск bot (рестарт #4)
+[26.09.2025 21:49:27] [ERROR] [run] [WATCHDOG] bot аварийно завершился: DefaultBotProperties.__init__() got an unexpected keyword argument 'disable_web_page_preview' (рестарт 5/5)
+[26.09.2025 21:49:30] [INFO] [run] [WATCHDOG] Запуск bot (рестарт #5)
+[26.09.2025 21:49:30] [ERROR] [run] [WATCHDOG] bot аварийно завершился: DefaultBotProperties.__init__() got an unexpected keyword argument 'disable_web_page_preview' (рестарт 6/5)
+[26.09.2025 21:49:30] [ERROR] [run] [WATCHDOG] bot достиг максимума рестартов (5). Остановка.
+[26.09.2025 21:49:33] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:49:53 +04)" (scheduled at 2025-09-26 21:49:33.868331+04:00)
+[26.09.2025 21:49:33] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 17:49:33
+[26.09.2025 21:49:33] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:49:53 +04)" executed successfully
+[26.09.2025 21:49:34] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:49:35] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:49:44] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 21:49:44] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:49:45] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:49:46] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 21:49:46] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001EFCC0F2F10>
+[26.09.2025 21:49:53] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:50:13 +04)" (scheduled at 2025-09-26 21:49:53.868331+04:00)
+[26.09.2025 21:49:53] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 17:49:53
+[26.09.2025 21:49:53] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:50:13 +04)" executed successfully
+[26.09.2025 21:49:54] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:49:55] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:50:04] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:50:05] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:50:13] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:50:33 +04)" (scheduled at 2025-09-26 21:50:13.868331+04:00)
+[26.09.2025 21:50:13] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 17:50:13
+[26.09.2025 21:50:13] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:50:33 +04)" executed successfully
+[26.09.2025 21:50:14] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 21:50:14] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:50:15] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 21:50:15] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001EFCC183A50>
+[26.09.2025 21:50:15] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:50:24] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:50:25] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:50:33] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:50:53 +04)" (scheduled at 2025-09-26 21:50:33.868331+04:00)
+[26.09.2025 21:50:33] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 17:50:33
+[26.09.2025 21:50:33] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:50:53 +04)" executed successfully
+[26.09.2025 21:50:34] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:50:35] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:52:02] [INFO] [run] Режим сервиса: sandbox
+[26.09.2025 21:52:02] [INFO] [run] [WATCHDOG] Запуск scheduler (рестарт #0)
+[26.09.2025 21:52:02] [INFO] [base] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[26.09.2025 21:52:02] [INFO] [scheduler] [ШЕДУЛЕР] Задание 'fetch_market_data' добавлено.
+[26.09.2025 21:52:02] [INFO] [base] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[26.09.2025 21:52:02] [INFO] [scheduler] [ШЕДУЛЕР] Задание 'train_models' добавлено.
+[26.09.2025 21:52:02] [INFO] [base] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[26.09.2025 21:52:02] [INFO] [scheduler] [ШЕДУЛЕР] Задание 'heartbeat' добавлено.
+[26.09.2025 21:52:02] [INFO] [base] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[26.09.2025 21:52:02] [INFO] [scheduler] [ШЕДУЛЕР] Задание 'expire_subs' добавлено.
+[26.09.2025 21:52:02] [INFO] [base] Added job "fetch_market_data" to job store "default"
+[26.09.2025 21:52:02] [INFO] [base] Added job "train_models" to job store "default"
+[26.09.2025 21:52:02] [INFO] [base] Added job "heartbeat" to job store "default"
+[26.09.2025 21:52:02] [INFO] [base] Added job "expire_subs" to job store "default"
+[26.09.2025 21:52:02] [INFO] [base] Scheduler started
+[26.09.2025 21:52:02] [INFO] [scheduler] [ШЕДУЛЕР] Запуск APScheduler с jobstore SQLite.
+[26.09.2025 21:52:02] [INFO] [run] [WATCHDOG] Запуск sandbox (рестарт #0)
+[26.09.2025 21:52:02] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 21:52:02] [INFO] [run] [WATCHDOG] Запуск heartbeat (рестарт #0)
+[26.09.2025 21:52:02] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:52:02] [INFO] [run] [WATCHDOG] Запуск bot (рестарт #0)
+[26.09.2025 21:52:04] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:52:04] [INFO] [main] [БОТ] Роутеры: user=ON, admin=ON
+[26.09.2025 21:52:05] [INFO] [main] [БОТ] Онлайн как @Velayne_Bot (id=8291187695)
+[26.09.2025 21:52:05] [INFO] [dispatcher] Start polling
+[26.09.2025 21:52:05] [INFO] [dispatcher] Run polling for bot @Velayne_Bot id=8291187695 - 'Velayne Bot'
+[26.09.2025 21:52:05] [INFO] [dispatcher] Update id=956956512 is handled. Duration 375 ms by bot id=8291187695
+[26.09.2025 21:52:05] [INFO] [dispatcher] Update id=956956511 is handled. Duration 390 ms by bot id=8291187695
+[26.09.2025 21:52:12] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:52:14] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:52:22] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:52:42 +04)" (scheduled at 2025-09-26 21:52:22.424963+04:00)
+[26.09.2025 21:52:22] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 17:52:22
+[26.09.2025 21:52:22] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:52:42 +04)" executed successfully
+[26.09.2025 21:52:22] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:52:24] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:52:32] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 21:52:32] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:52:33] [INFO] [dispatcher] Update id=956956513 is handled. Duration 125 ms by bot id=8291187695
+[26.09.2025 21:52:34] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:52:35] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 21:52:35] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000015E89D3B590>
+[26.09.2025 21:52:40] [INFO] [dispatcher] Update id=956956514 is handled. Duration 93 ms by bot id=8291187695
+[26.09.2025 21:52:42] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:53:02 +04)" (scheduled at 2025-09-26 21:52:42.424963+04:00)
+[26.09.2025 21:52:42] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 17:52:42
+[26.09.2025 21:52:42] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:53:02 +04)" executed successfully
+[26.09.2025 21:52:43] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:52:44] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:52:51] [INFO] [dispatcher] Update id=956956515 is handled. Duration 125 ms by bot id=8291187695
+[26.09.2025 21:52:53] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:52:54] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:52:55] [INFO] [dispatcher] Update id=956956516 is handled. Duration 94 ms by bot id=8291187695
+[26.09.2025 21:53:00] [INFO] [dispatcher] Update id=956956517 is handled. Duration 125 ms by bot id=8291187695
+[26.09.2025 21:53:02] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:53:22 +04)" (scheduled at 2025-09-26 21:53:02.424963+04:00)
+[26.09.2025 21:53:02] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 17:53:02
+[26.09.2025 21:53:02] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:53:22 +04)" executed successfully
+[26.09.2025 21:53:02] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 21:53:02] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:53:03] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 21:53:03] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000015E8AA99D90>
+[26.09.2025 21:53:04] [INFO] [dispatcher] Update id=956956518 is handled. Duration 218 ms by bot id=8291187695
+[26.09.2025 21:53:04] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:53:06] [INFO] [dispatcher] Update id=956956519 is handled. Duration 109 ms by bot id=8291187695
+[26.09.2025 21:53:10] [INFO] [dispatcher] Update id=956956520 is handled. Duration 93 ms by bot id=8291187695
+[26.09.2025 21:53:13] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:53:14] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:53:22] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:53:42 +04)" (scheduled at 2025-09-26 21:53:22.424963+04:00)
+[26.09.2025 21:53:22] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 17:53:22
+[26.09.2025 21:53:22] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:53:42 +04)" executed successfully
+[26.09.2025 21:53:23] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:53:24] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:53:32] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 21:53:32] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:53:34] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 21:53:34] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000015E8AD85C90>
+[26.09.2025 21:53:34] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:53:42] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:54:02 +04)" (scheduled at 2025-09-26 21:53:42.424963+04:00)
+[26.09.2025 21:53:42] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 17:53:42
+[26.09.2025 21:53:42] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:54:02 +04)" executed successfully
+[26.09.2025 21:53:42] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:53:44] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:53:53] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:53:54] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:54:02] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:54:22 +04)" (scheduled at 2025-09-26 21:54:02.424963+04:00)
+[26.09.2025 21:54:02] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 17:54:02
+[26.09.2025 21:54:02] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:54:22 +04)" executed successfully
+[26.09.2025 21:54:03] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 21:54:03] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:54:04] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 21:54:04] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000015E8D3E6D90>
+[26.09.2025 21:54:04] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:54:13] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:54:14] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:54:22] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:54:42 +04)" (scheduled at 2025-09-26 21:54:22.424963+04:00)
+[26.09.2025 21:54:22] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 17:54:22
+[26.09.2025 21:54:22] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:54:42 +04)" executed successfully
+[26.09.2025 21:54:23] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:54:24] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:54:33] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 21:54:33] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:54:34] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:54:34] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 21:54:34] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000015E8BFA4F10>
+[26.09.2025 21:54:42] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:55:02 +04)" (scheduled at 2025-09-26 21:54:42.424963+04:00)
+[26.09.2025 21:54:42] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 17:54:42
+[26.09.2025 21:54:42] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:55:02 +04)" executed successfully
+[26.09.2025 21:54:43] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:54:44] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:54:53] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:54:54] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:55:02] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:55:22 +04)" (scheduled at 2025-09-26 21:55:02.424963+04:00)
+[26.09.2025 21:55:02] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 17:55:02
+[26.09.2025 21:55:02] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:55:22 +04)" executed successfully
+[26.09.2025 21:55:03] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 21:55:03] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:55:04] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:55:04] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 21:55:04] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000015E8C028110>
+[26.09.2025 21:55:04] [ERROR] [base_events] Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x0000015E89D26AC0>, 12950.078)])']
+connector: <aiohttp.connector.TCPConnector object at 0x0000015E8AE7D790>
+[26.09.2025 21:55:13] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:55:14] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:55:22] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:55:42 +04)" (scheduled at 2025-09-26 21:55:22.424963+04:00)
+[26.09.2025 21:55:22] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 17:55:22
+[26.09.2025 21:55:22] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:55:42 +04)" executed successfully
+[26.09.2025 21:55:23] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:55:24] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:55:33] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 21:55:33] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:55:34] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:55:34] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 21:55:34] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000015E8C7F5E90>
+[26.09.2025 21:55:34] [ERROR] [base_events] Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x0000015E89C6BEE0>, 12980.062)])']
+connector: <aiohttp.connector.TCPConnector object at 0x0000015E8C7F75D0>
+[26.09.2025 21:55:42] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:56:02 +04)" (scheduled at 2025-09-26 21:55:42.424963+04:00)
+[26.09.2025 21:55:42] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 17:55:42
+[26.09.2025 21:55:42] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:56:02 +04)" executed successfully
+[26.09.2025 21:55:43] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:55:44] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:55:53] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:55:54] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:56:02] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:56:22 +04)" (scheduled at 2025-09-26 21:56:02.424963+04:00)
+[26.09.2025 21:56:02] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 17:56:02
+[26.09.2025 21:56:02] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:56:22 +04)" executed successfully
+[26.09.2025 21:56:03] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 21:56:03] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:56:04] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:56:04] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 21:56:04] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000015E8A1FEC50>
+[26.09.2025 21:56:13] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:56:14] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:56:22] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:56:42 +04)" (scheduled at 2025-09-26 21:56:22.424963+04:00)
+[26.09.2025 21:56:22] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 17:56:22
+[26.09.2025 21:56:22] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:56:42 +04)" executed successfully
+[26.09.2025 21:56:23] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:56:24] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:56:33] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 21:56:33] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:56:34] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:56:34] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 21:56:34] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000015E8DC2C0D0>
+[26.09.2025 21:56:34] [ERROR] [base_events] Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x0000015E89D25710>, 13040.093)])']
+connector: <aiohttp.connector.TCPConnector object at 0x0000015E8DC2C810>
+[26.09.2025 21:56:42] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:57:02 +04)" (scheduled at 2025-09-26 21:56:42.424963+04:00)
+[26.09.2025 21:56:42] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 17:56:42
+[26.09.2025 21:56:42] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:57:02 +04)" executed successfully
+[26.09.2025 21:56:43] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:56:44] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:56:53] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:56:54] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:57:02] [INFO] [base] Running job "fetch_market_data (trigger: interval[0:05:00], next run at: 2025-09-26 22:02:02 +04)" (scheduled at 2025-09-26 21:57:02.424963+04:00)
+[26.09.2025 21:57:02] [INFO] [scheduler] [ШЕДУЛЕР] fetch_market_data: Докачка OHLCV (mock)
+[26.09.2025 21:57:02] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:57:22 +04)" (scheduled at 2025-09-26 21:57:02.424963+04:00)
+[26.09.2025 21:57:02] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 17:57:02
+[26.09.2025 21:57:02] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:57:22 +04)" executed successfully
+[26.09.2025 21:57:02] [INFO] [base] Job "fetch_market_data (trigger: interval[0:05:00], next run at: 2025-09-26 22:02:02 +04)" executed successfully
+[26.09.2025 21:57:03] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 21:57:03] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:57:04] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:57:04] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 21:57:04] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000015E8DA68290>
+[26.09.2025 21:57:04] [ERROR] [base_events] Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x0000015E89D24AD0>, 13070.062)])']
+connector: <aiohttp.connector.TCPConnector object at 0x0000015E8CF86710>
+[26.09.2025 21:57:13] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:57:14] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:57:22] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:57:42 +04)" (scheduled at 2025-09-26 21:57:22.424963+04:00)
+[26.09.2025 21:57:22] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 17:57:22
+[26.09.2025 21:57:22] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:57:42 +04)" executed successfully
+[26.09.2025 21:57:23] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:57:24] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:57:33] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 21:57:33] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:57:34] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 21:57:34] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000015E8AB05650>
+[26.09.2025 21:57:34] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:57:42] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:58:02 +04)" (scheduled at 2025-09-26 21:57:42.424963+04:00)
+[26.09.2025 21:57:42] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 17:57:42
+[26.09.2025 21:57:42] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:58:02 +04)" executed successfully
+[26.09.2025 21:57:43] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:57:44] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:57:53] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:57:54] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:58:02] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:58:22 +04)" (scheduled at 2025-09-26 21:58:02.424963+04:00)
+[26.09.2025 21:58:02] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 17:58:02
+[26.09.2025 21:58:02] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:58:22 +04)" executed successfully
+[26.09.2025 21:58:03] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 21:58:03] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:58:04] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 21:58:04] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000015E8D035BD0>
+[26.09.2025 21:58:04] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:58:13] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:58:14] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:58:22] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:58:42 +04)" (scheduled at 2025-09-26 21:58:22.424963+04:00)
+[26.09.2025 21:58:22] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 17:58:22
+[26.09.2025 21:58:22] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:58:42 +04)" executed successfully
+[26.09.2025 21:58:23] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:58:24] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:58:33] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 21:58:33] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:58:34] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 21:58:34] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000015E8A3132D0>
+[26.09.2025 21:58:34] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:58:42] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:59:02 +04)" (scheduled at 2025-09-26 21:58:42.424963+04:00)
+[26.09.2025 21:58:42] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 17:58:42
+[26.09.2025 21:58:42] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:59:02 +04)" executed successfully
+[26.09.2025 21:58:43] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:58:44] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:58:53] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:58:54] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:59:02] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:59:22 +04)" (scheduled at 2025-09-26 21:59:02.424963+04:00)
+[26.09.2025 21:59:02] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 17:59:02
+[26.09.2025 21:59:02] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:59:22 +04)" executed successfully
+[26.09.2025 21:59:03] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 21:59:03] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:59:04] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 21:59:04] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000015E8D95F210>
+[26.09.2025 21:59:04] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:59:13] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:59:14] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:59:22] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:59:42 +04)" (scheduled at 2025-09-26 21:59:22.424963+04:00)
+[26.09.2025 21:59:22] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 17:59:22
+[26.09.2025 21:59:22] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 21:59:42 +04)" executed successfully
+[26.09.2025 21:59:23] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:59:24] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:59:33] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 21:59:33] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:59:34] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 21:59:34] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000015E8BF18050>
+[26.09.2025 21:59:34] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:59:42] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:00:02 +04)" (scheduled at 2025-09-26 21:59:42.424963+04:00)
+[26.09.2025 21:59:42] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 17:59:42
+[26.09.2025 21:59:42] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:00:02 +04)" executed successfully
+[26.09.2025 21:59:43] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:59:44] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 21:59:53] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 21:59:54] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:00:02] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:00:22 +04)" (scheduled at 2025-09-26 22:00:02.424963+04:00)
+[26.09.2025 22:00:02] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:00:02
+[26.09.2025 22:00:02] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:00:22 +04)" executed successfully
+[26.09.2025 22:00:03] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 22:00:03] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:00:04] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 22:00:04] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000015E8C1D0610>
+[26.09.2025 22:00:04] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:00:13] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:00:14] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:00:22] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:00:42 +04)" (scheduled at 2025-09-26 22:00:22.424963+04:00)
+[26.09.2025 22:00:22] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:00:22
+[26.09.2025 22:00:22] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:00:42 +04)" executed successfully
+[26.09.2025 22:00:23] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:00:24] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:00:33] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 22:00:33] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:00:34] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 22:00:34] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000015E8ACC2010>
+[26.09.2025 22:00:34] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:00:42] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:01:02 +04)" (scheduled at 2025-09-26 22:00:42.424963+04:00)
+[26.09.2025 22:00:42] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:00:42
+[26.09.2025 22:00:42] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:01:02 +04)" executed successfully
+[26.09.2025 22:00:43] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:00:44] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:00:53] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:00:54] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:01:02] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:01:22 +04)" (scheduled at 2025-09-26 22:01:02.424963+04:00)
+[26.09.2025 22:01:02] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:01:02
+[26.09.2025 22:01:02] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:01:22 +04)" executed successfully
+[26.09.2025 22:01:03] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 22:01:03] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:01:04] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 22:01:04] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000015E8D148810>
+[26.09.2025 22:01:04] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:01:13] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:01:14] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:01:22] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:01:42 +04)" (scheduled at 2025-09-26 22:01:22.424963+04:00)
+[26.09.2025 22:01:22] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:01:22
+[26.09.2025 22:01:22] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:01:42 +04)" executed successfully
+[26.09.2025 22:01:23] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:01:24] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:01:33] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 22:01:33] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:01:34] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 22:01:34] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000015E8D3E9B50>
+[26.09.2025 22:01:34] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:01:42] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:02:02 +04)" (scheduled at 2025-09-26 22:01:42.424963+04:00)
+[26.09.2025 22:01:42] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:01:42
+[26.09.2025 22:01:42] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:02:02 +04)" executed successfully
+[26.09.2025 22:01:43] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:01:44] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:01:48] [INFO] [dispatcher] Update id=956956521 is handled. Duration 218 ms by bot id=8291187695
+[26.09.2025 22:01:53] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:01:54] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:02:02] [INFO] [base] Running job "fetch_market_data (trigger: interval[0:05:00], next run at: 2025-09-26 22:07:02 +04)" (scheduled at 2025-09-26 22:02:02.424963+04:00)
+[26.09.2025 22:02:02] [INFO] [scheduler] [ШЕДУЛЕР] fetch_market_data: Докачка OHLCV (mock)
+[26.09.2025 22:02:02] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:02:22 +04)" (scheduled at 2025-09-26 22:02:02.424963+04:00)
+[26.09.2025 22:02:02] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:02:02
+[26.09.2025 22:02:02] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:02:22 +04)" executed successfully
+[26.09.2025 22:02:02] [INFO] [base] Job "fetch_market_data (trigger: interval[0:05:00], next run at: 2025-09-26 22:07:02 +04)" executed successfully
+[26.09.2025 22:02:02] [INFO] [dispatcher] Update id=956956522 is handled. Duration 110 ms by bot id=8291187695
+[26.09.2025 22:02:03] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 22:02:03] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:02:04] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 22:02:04] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000015E8A2A0ED0>
+[26.09.2025 22:02:04] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:02:07] [INFO] [dispatcher] Update id=956956523 is handled. Duration 109 ms by bot id=8291187695
+[26.09.2025 22:02:13] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:02:14] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:02:22] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:02:42 +04)" (scheduled at 2025-09-26 22:02:22.424963+04:00)
+[26.09.2025 22:02:22] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:02:22
+[26.09.2025 22:02:22] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:02:42 +04)" executed successfully
+[26.09.2025 22:02:23] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:02:24] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:02:29] [INFO] [dispatcher] Update id=956956524 is handled. Duration 188 ms by bot id=8291187695
+[26.09.2025 22:02:33] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 22:02:33] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:02:33] [INFO] [dispatcher] Update id=956956525 is handled. Duration 109 ms by bot id=8291187695
+[26.09.2025 22:02:34] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 22:02:34] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000015E8D443F50>
+[26.09.2025 22:02:34] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:02:35] [INFO] [dispatcher] Update id=956956526 is handled. Duration 108 ms by bot id=8291187695
+[26.09.2025 22:02:42] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:03:02 +04)" (scheduled at 2025-09-26 22:02:42.424963+04:00)
+[26.09.2025 22:02:42] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:02:42
+[26.09.2025 22:02:42] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:03:02 +04)" executed successfully
+[26.09.2025 22:02:43] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:02:44] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:02:53] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:02:54] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:03:02] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:03:22 +04)" (scheduled at 2025-09-26 22:03:02.424963+04:00)
+[26.09.2025 22:03:02] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:03:02
+[26.09.2025 22:03:02] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:03:22 +04)" executed successfully
+[26.09.2025 22:03:03] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 22:03:03] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:03:04] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 22:03:04] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000015E8A2D4250>
+[26.09.2025 22:03:04] [ERROR] [base_events] Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x0000015E89D258D0>, 13430.125)])']
+connector: <aiohttp.connector.TCPConnector object at 0x0000015E8A2D4810>
+[26.09.2025 22:03:04] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:03:13] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:03:14] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:03:22] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:03:42 +04)" (scheduled at 2025-09-26 22:03:22.424963+04:00)
+[26.09.2025 22:03:22] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:03:22
+[26.09.2025 22:03:22] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:03:42 +04)" executed successfully
+[26.09.2025 22:03:23] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:03:24] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:03:33] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 22:03:33] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:03:34] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 22:03:34] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000015E8A19D2D0>
+[26.09.2025 22:03:34] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:03:42] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:04:02 +04)" (scheduled at 2025-09-26 22:03:42.424963+04:00)
+[26.09.2025 22:03:42] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:03:42
+[26.09.2025 22:03:42] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:04:02 +04)" executed successfully
+[26.09.2025 22:03:43] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:03:45] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:03:53] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:03:55] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:04:02] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:04:22 +04)" (scheduled at 2025-09-26 22:04:02.424963+04:00)
+[26.09.2025 22:04:02] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:04:02
+[26.09.2025 22:04:02] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:04:22 +04)" executed successfully
+[26.09.2025 22:04:03] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 22:04:03] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:04:04] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 22:04:04] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000015E8A298810>
+[26.09.2025 22:04:05] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:04:13] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:04:15] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:04:22] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:04:42 +04)" (scheduled at 2025-09-26 22:04:22.424963+04:00)
+[26.09.2025 22:04:22] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:04:22
+[26.09.2025 22:04:22] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:04:42 +04)" executed successfully
+[26.09.2025 22:04:23] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:04:25] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:04:33] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 22:04:33] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:04:34] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 22:04:34] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000015E8C9EA3D0>
+[26.09.2025 22:04:35] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:04:42] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:05:02 +04)" (scheduled at 2025-09-26 22:04:42.424963+04:00)
+[26.09.2025 22:04:42] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:04:42
+[26.09.2025 22:04:42] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:05:02 +04)" executed successfully
+[26.09.2025 22:04:43] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:04:45] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:05:15] [INFO] [run] Режим сервиса: sandbox
+[26.09.2025 22:05:15] [INFO] [run] [WATCHDOG] Запуск scheduler (рестарт #0)
+[26.09.2025 22:05:15] [INFO] [base] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[26.09.2025 22:05:15] [INFO] [scheduler] [ШЕДУЛЕР] Задание 'fetch_market_data' добавлено.
+[26.09.2025 22:05:15] [INFO] [base] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[26.09.2025 22:05:15] [INFO] [scheduler] [ШЕДУЛЕР] Задание 'train_models' добавлено.
+[26.09.2025 22:05:15] [INFO] [base] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[26.09.2025 22:05:15] [INFO] [scheduler] [ШЕДУЛЕР] Задание 'heartbeat' добавлено.
+[26.09.2025 22:05:15] [INFO] [base] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[26.09.2025 22:05:15] [INFO] [scheduler] [ШЕДУЛЕР] Задание 'expire_subs' добавлено.
+[26.09.2025 22:05:15] [INFO] [base] Added job "fetch_market_data" to job store "default"
+[26.09.2025 22:05:15] [INFO] [base] Added job "train_models" to job store "default"
+[26.09.2025 22:05:15] [INFO] [base] Added job "heartbeat" to job store "default"
+[26.09.2025 22:05:15] [INFO] [base] Added job "expire_subs" to job store "default"
+[26.09.2025 22:05:15] [INFO] [base] Scheduler started
+[26.09.2025 22:05:15] [INFO] [scheduler] [ШЕДУЛЕР] Запуск APScheduler с jobstore SQLite.
+[26.09.2025 22:05:15] [INFO] [run] [WATCHDOG] Запуск sandbox (рестарт #0)
+[26.09.2025 22:05:16] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 22:05:16] [INFO] [run] [WATCHDOG] Запуск heartbeat (рестарт #0)
+[26.09.2025 22:05:16] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:05:16] [INFO] [run] [WATCHDOG] Запуск bot (рестарт #0)
+[26.09.2025 22:05:17] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:05:18] [INFO] [main] [БОТ] Роутеры: user=ON, admin=ON
+[26.09.2025 22:05:18] [INFO] [main] [БОТ] Онлайн как @Velayne_Bot (id=8291187695)
+[26.09.2025 22:05:18] [INFO] [dispatcher] Start polling
+[26.09.2025 22:05:18] [INFO] [dispatcher] Run polling for bot @Velayne_Bot id=8291187695 - 'Velayne Bot'
+[26.09.2025 22:05:26] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:05:27] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:05:35] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:05:55 +04)" (scheduled at 2025-09-26 22:05:35.466262+04:00)
+[26.09.2025 22:05:35] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:05:35
+[26.09.2025 22:05:35] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:05:55 +04)" executed successfully
+[26.09.2025 22:05:36] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:05:37] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:05:44] [INFO] [dispatcher] Update id=956956527 is handled. Duration 390 ms by bot id=8291187695
+[26.09.2025 22:05:46] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 22:05:46] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:05:47] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:05:48] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 22:05:48] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002656E42BAD0>
+[26.09.2025 22:05:48] [INFO] [dispatcher] Update id=956956528 is handled. Duration 202 ms by bot id=8291187695
+[26.09.2025 22:05:50] [INFO] [dispatcher] Update id=956956529 is handled. Duration 125 ms by bot id=8291187695
+[26.09.2025 22:05:51] [INFO] [dispatcher] Update id=956956530 is handled. Duration 93 ms by bot id=8291187695
+[26.09.2025 22:05:52] [INFO] [dispatcher] Update id=956956531 is handled. Duration 110 ms by bot id=8291187695
+[26.09.2025 22:05:54] [INFO] [dispatcher] Update id=956956532 is handled. Duration 156 ms by bot id=8291187695
+[26.09.2025 22:05:55] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:06:15 +04)" (scheduled at 2025-09-26 22:05:55.466262+04:00)
+[26.09.2025 22:05:55] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:05:55
+[26.09.2025 22:05:55] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:06:15 +04)" executed successfully
+[26.09.2025 22:05:56] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:05:57] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:06:06] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:06:07] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:06:15] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:06:35 +04)" (scheduled at 2025-09-26 22:06:15.466262+04:00)
+[26.09.2025 22:06:15] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:06:15
+[26.09.2025 22:06:15] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:06:35 +04)" executed successfully
+[26.09.2025 22:06:16] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 22:06:16] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:06:17] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 22:06:17] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002656F784E10>
+[26.09.2025 22:06:17] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:06:26] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:06:27] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:06:35] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:06:55 +04)" (scheduled at 2025-09-26 22:06:35.466262+04:00)
+[26.09.2025 22:06:35] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:06:35
+[26.09.2025 22:06:35] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:06:55 +04)" executed successfully
+[26.09.2025 22:06:36] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:06:37] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:06:46] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 22:06:46] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:06:47] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:06:47] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 22:06:47] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002656F771D90>
+[26.09.2025 22:06:47] [ERROR] [base_events] Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002656E416BA0>, 13653.109)])']
+connector: <aiohttp.connector.TCPConnector object at 0x0000026571023E90>
+[26.09.2025 22:06:55] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:07:15 +04)" (scheduled at 2025-09-26 22:06:55.466262+04:00)
+[26.09.2025 22:06:55] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:06:55
+[26.09.2025 22:06:55] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:07:15 +04)" executed successfully
+[26.09.2025 22:06:56] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:06:57] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:07:06] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:07:07] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:07:15] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:07:35 +04)" (scheduled at 2025-09-26 22:07:15.466262+04:00)
+[26.09.2025 22:07:15] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:07:15
+[26.09.2025 22:07:15] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:07:35 +04)" executed successfully
+[26.09.2025 22:07:16] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 22:07:16] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:07:17] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:07:17] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 22:07:17] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000265729297D0>
+[26.09.2025 22:07:26] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:07:27] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:07:35] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:07:55 +04)" (scheduled at 2025-09-26 22:07:35.466262+04:00)
+[26.09.2025 22:07:35] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:07:35
+[26.09.2025 22:07:35] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:07:55 +04)" executed successfully
+[26.09.2025 22:07:36] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:07:37] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:07:46] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 22:07:46] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:07:47] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:07:47] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 22:07:47] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002657240AB90>
+[26.09.2025 22:07:47] [ERROR] [base_events] Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002656E416190>, 13713.14)])']
+connector: <aiohttp.connector.TCPConnector object at 0x000002657240AE50>
+[26.09.2025 22:07:55] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:08:15 +04)" (scheduled at 2025-09-26 22:07:55.466262+04:00)
+[26.09.2025 22:07:55] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:07:55
+[26.09.2025 22:07:55] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:08:15 +04)" executed successfully
+[26.09.2025 22:07:56] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:07:57] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:08:06] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:08:07] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:08:15] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:08:35 +04)" (scheduled at 2025-09-26 22:08:15.466262+04:00)
+[26.09.2025 22:08:15] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:08:15
+[26.09.2025 22:08:15] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:08:35 +04)" executed successfully
+[26.09.2025 22:08:16] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 22:08:16] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:08:17] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:08:17] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 22:08:17] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000265713C6FD0>
+[26.09.2025 22:08:17] [ERROR] [base_events] Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002656E416350>, 13743.109)])']
+connector: <aiohttp.connector.TCPConnector object at 0x0000026571C45A50>
+[26.09.2025 22:08:26] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:08:27] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:08:35] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:08:55 +04)" (scheduled at 2025-09-26 22:08:35.466262+04:00)
+[26.09.2025 22:08:35] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:08:35
+[26.09.2025 22:08:35] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:08:55 +04)" executed successfully
+[26.09.2025 22:08:36] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:08:37] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:08:46] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 22:08:46] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:08:47] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 22:08:47] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000026571F2C350>
+[26.09.2025 22:08:47] [ERROR] [base_events] Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x000002656E416270>, 13773.14)])']
+connector: <aiohttp.connector.TCPConnector object at 0x0000026570F14850>
+[26.09.2025 22:08:47] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:08:55] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:09:15 +04)" (scheduled at 2025-09-26 22:08:55.466262+04:00)
+[26.09.2025 22:08:55] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:08:55
+[26.09.2025 22:08:55] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:09:15 +04)" executed successfully
+[26.09.2025 22:08:56] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:08:57] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:09:06] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:09:07] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:09:15] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:09:35 +04)" (scheduled at 2025-09-26 22:09:15.466262+04:00)
+[26.09.2025 22:09:15] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:09:15
+[26.09.2025 22:09:15] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:09:35 +04)" executed successfully
+[26.09.2025 22:09:16] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 22:09:16] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:09:17] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 22:09:17] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000026570C85E90>
+[26.09.2025 22:09:17] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:09:26] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:09:27] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:09:35] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:09:55 +04)" (scheduled at 2025-09-26 22:09:35.466262+04:00)
+[26.09.2025 22:09:35] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:09:35
+[26.09.2025 22:09:35] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:09:55 +04)" executed successfully
+[26.09.2025 22:09:36] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:09:37] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:09:46] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 22:09:46] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:09:47] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 22:09:47] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002657188B110>
+[26.09.2025 22:09:47] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:09:55] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:10:15 +04)" (scheduled at 2025-09-26 22:09:55.466262+04:00)
+[26.09.2025 22:09:55] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:09:55
+[26.09.2025 22:09:55] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:10:15 +04)" executed successfully
+[26.09.2025 22:09:56] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:09:57] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:10:06] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:10:07] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:10:15] [INFO] [base] Running job "fetch_market_data (trigger: interval[0:05:00], next run at: 2025-09-26 22:15:15 +04)" (scheduled at 2025-09-26 22:10:15.465266+04:00)
+[26.09.2025 22:10:15] [INFO] [scheduler] [ШЕДУЛЕР] fetch_market_data: Докачка OHLCV (mock)
+[26.09.2025 22:10:15] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:10:35 +04)" (scheduled at 2025-09-26 22:10:15.466262+04:00)
+[26.09.2025 22:10:15] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:10:15
+[26.09.2025 22:10:15] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:10:35 +04)" executed successfully
+[26.09.2025 22:10:15] [INFO] [base] Job "fetch_market_data (trigger: interval[0:05:00], next run at: 2025-09-26 22:15:15 +04)" executed successfully
+[26.09.2025 22:10:16] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 22:10:16] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:10:17] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 22:10:17] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000265713EAD50>
+[26.09.2025 22:10:18] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:10:26] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:10:28] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:10:35] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:10:55 +04)" (scheduled at 2025-09-26 22:10:35.466262+04:00)
+[26.09.2025 22:10:35] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:10:35
+[26.09.2025 22:10:35] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:10:55 +04)" executed successfully
+[26.09.2025 22:10:36] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:10:38] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:10:46] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 22:10:46] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:10:48] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:10:48] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 22:10:48] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002656A87F410>
+[26.09.2025 22:10:55] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:11:15 +04)" (scheduled at 2025-09-26 22:10:55.466262+04:00)
+[26.09.2025 22:10:55] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:10:55
+[26.09.2025 22:10:55] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:11:15 +04)" executed successfully
+[26.09.2025 22:10:56] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:10:58] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:11:06] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:11:08] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:11:15] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:11:35 +04)" (scheduled at 2025-09-26 22:11:15.466262+04:00)
+[26.09.2025 22:11:15] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:11:15
+[26.09.2025 22:11:15] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:11:35 +04)" executed successfully
+[26.09.2025 22:11:16] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 22:11:16] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:11:17] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 22:11:17] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000026570AF07D0>
+[26.09.2025 22:11:18] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:11:26] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:11:28] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:11:35] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:11:55 +04)" (scheduled at 2025-09-26 22:11:35.466262+04:00)
+[26.09.2025 22:11:35] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:11:35
+[26.09.2025 22:11:35] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:11:55 +04)" executed successfully
+[26.09.2025 22:11:36] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:11:38] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:11:46] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 22:11:46] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:11:47] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 22:11:47] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000026571486210>
+[26.09.2025 22:11:48] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:11:55] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:12:15 +04)" (scheduled at 2025-09-26 22:11:55.466262+04:00)
+[26.09.2025 22:11:55] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:11:55
+[26.09.2025 22:11:55] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:12:15 +04)" executed successfully
+[26.09.2025 22:11:56] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:11:58] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:12:06] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:12:08] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:12:15] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:12:35 +04)" (scheduled at 2025-09-26 22:12:15.466262+04:00)
+[26.09.2025 22:12:15] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:12:15
+[26.09.2025 22:12:15] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:12:35 +04)" executed successfully
+[26.09.2025 22:12:16] [INFO] [engine] [SANDBOX] Queued test order
+[26.09.2025 22:12:16] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:12:17] [WARNING] [exchange] binance requires to release all resources with an explicit call to the .close() coroutine. If you are using the exchange instance with async coroutines, add `await exchange.close()` to your code into a place when you're done with the exchange and don't need the exchange instance anymore (at the end of your async coroutine).
+[26.09.2025 22:12:17] [ERROR] [base_events] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000026571FFB090>
+[26.09.2025 22:12:18] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:12:26] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:12:28] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:12:35] [INFO] [base] Running job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:12:55 +04)" (scheduled at 2025-09-26 22:12:35.466262+04:00)
+[26.09.2025 22:12:35] [INFO] [scheduler] [ШЕДУЛЕР] heartbeat: жив 26.09.2025 18:12:35
+[26.09.2025 22:12:35] [INFO] [base] Job "heartbeat (trigger: interval[0:00:20], next run at: 2025-09-26 22:12:55 +04)" executed successfully
+[26.09.2025 22:12:36] [INFO] [run] [HEARTBEAT] сервис жив
+[26.09.2025 22:12:38] [INFO] [engine] [SANDBOX] heartbeat
+[26.09.2025 22:21:19] [INFO] [run] [WATCHDOG] Запуск scheduler (рестарт #0)
+[26.09.2025 22:21:19] [INFO] [base] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[26.09.2025 22:21:19] [INFO] [base] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[26.09.2025 22:21:19] [ERROR] [run] [WATCHDOG] scheduler аварийно завершился: greenlet_spawn has not been called; can't call await_only() here. Was IO attempted in an unexpected place? (Background on this error at: https://sqlalche.me/e/20/xd2s) (рестарт 1/5)
+[26.09.2025 22:21:19] [INFO] [run] [WATCHDOG] Запуск sandbox (рестарт #0)
+[26.09.2025 22:21:19] [INFO] [run] [WATCHDOG] Запуск bot (рестарт #0)
+[26.09.2025 22:21:19] [ERROR] [run] [WATCHDOG] sandbox аварийно завершился: (builtins.TypeError) SQLite DateTime type only accepts Python datetime and date objects as input.
+[SQL: INSERT INTO trades (ts, symbol, side, price, amount, pnl, sandbox) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'symbol': 'BTC/USDT', 'sandbox': 1, 'pnl': 10.0, 'price': 50000.0, 'ts': '2025-09-26T18:21:19.078600', 'side': 'buy', 'amount': 0.01}]] (рестарт 1/5)
+[26.09.2025 22:21:19] [INFO] [main] [БОТ] бот жив
+[26.09.2025 22:21:19] [INFO] [main] [БОТ] Меню и команды установлены
+[26.09.2025 22:21:19] [INFO] [main] [БОТ] Онлайн как @Velayne_Bot (id=8291187695)
+[26.09.2025 22:21:19] [INFO] [dispatcher] Start polling
+[26.09.2025 22:21:19] [INFO] [dispatcher] Run polling for bot @Velayne_Bot id=8291187695 - 'Velayne Bot'
+[26.09.2025 22:21:22] [INFO] [run] [WATCHDOG] Запуск scheduler (рестарт #1)
+[26.09.2025 22:21:22] [INFO] [run] [WATCHDOG] Запуск sandbox (рестарт #1)
+[26.09.2025 22:21:22] [ERROR] [run] [WATCHDOG] sandbox аварийно завершился: (builtins.TypeError) SQLite DateTime type only accepts Python datetime and date objects as input.
+[SQL: INSERT INTO trades (ts, symbol, side, price, amount, pnl, sandbox) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'symbol': 'BTC/USDT', 'sandbox': 1, 'pnl': 10.0, 'price': 50000.0, 'ts': '2025-09-26T18:21:22.293301', 'side': 'buy', 'amount': 0.01}]] (рестарт 2/5)
+[26.09.2025 22:21:25] [INFO] [run] [WATCHDOG] Запуск sandbox (рестарт #2)
+[26.09.2025 22:21:25] [ERROR] [run] [WATCHDOG] sandbox аварийно завершился: (builtins.TypeError) SQLite DateTime type only accepts Python datetime and date objects as input.
+[SQL: INSERT INTO trades (ts, symbol, side, price, amount, pnl, sandbox) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'symbol': 'BTC/USDT', 'sandbox': 1, 'pnl': 10.0, 'price': 50000.0, 'ts': '2025-09-26T18:21:25.302566', 'side': 'buy', 'amount': 0.01}]] (рестарт 3/5)
+[26.09.2025 22:21:28] [INFO] [run] [WATCHDOG] Запуск sandbox (рестарт #3)
+[26.09.2025 22:21:28] [ERROR] [run] [WATCHDOG] sandbox аварийно завершился: (builtins.TypeError) SQLite DateTime type only accepts Python datetime and date objects as input.
+[SQL: INSERT INTO trades (ts, symbol, side, price, amount, pnl, sandbox) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'symbol': 'BTC/USDT', 'sandbox': 1, 'pnl': 10.0, 'price': 50000.0, 'ts': '2025-09-26T18:21:28.310297', 'side': 'buy', 'amount': 0.01}]] (рестарт 4/5)
+[26.09.2025 22:21:31] [INFO] [run] [WATCHDOG] Запуск sandbox (рестарт #4)
+[26.09.2025 22:21:31] [ERROR] [run] [WATCHDOG] sandbox аварийно завершился: (builtins.TypeError) SQLite DateTime type only accepts Python datetime and date objects as input.
+[SQL: INSERT INTO trades (ts, symbol, side, price, amount, pnl, sandbox) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'symbol': 'BTC/USDT', 'sandbox': 1, 'pnl': 10.0, 'price': 50000.0, 'ts': '2025-09-26T18:21:31.319049', 'side': 'buy', 'amount': 0.01}]] (рестарт 5/5)
+[26.09.2025 22:21:34] [INFO] [run] [WATCHDOG] Запуск sandbox (рестарт #5)
+[26.09.2025 22:21:34] [ERROR] [run] [WATCHDOG] sandbox аварийно завершился: (builtins.TypeError) SQLite DateTime type only accepts Python datetime and date objects as input.
+[SQL: INSERT INTO trades (ts, symbol, side, price, amount, pnl, sandbox) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'symbol': 'BTC/USDT', 'sandbox': 1, 'pnl': 10.0, 'price': 50000.0, 'ts': '2025-09-26T18:21:34.320697', 'side': 'buy', 'amount': 0.01}]] (рестарт 6/5)
+[26.09.2025 22:21:34] [ERROR] [run] [WATCHDOG] sandbox достиг лимита рестартов (5).
+[26.09.2025 22:21:49] [INFO] [main] [БОТ] бот жив
+[26.09.2025 22:22:07] [INFO] [dispatcher] Update id=956956533 is handled. Duration 281 ms by bot id=8291187695
+[26.09.2025 22:22:14] [INFO] [dispatcher] Update id=956956534 is not handled. Duration 0 ms by bot id=8291187695
+[26.09.2025 22:22:19] [INFO] [dispatcher] Update id=956956535 is handled. Duration 186 ms by bot id=8291187695
+[26.09.2025 22:22:19] [INFO] [main] [БОТ] бот жив
+[26.09.2025 22:22:22] [INFO] [dispatcher] Update id=956956536 is handled. Duration 233 ms by bot id=8291187695
+[26.09.2025 22:22:27] [INFO] [dispatcher] Update id=956956537 is handled. Duration 406 ms by bot id=8291187695
+[26.09.2025 22:22:31] [INFO] [dispatcher] Update id=956956538 is handled. Duration 281 ms by bot id=8291187695
+[26.09.2025 22:22:52] [INFO] [main] [БОТ] бот жив
+[26.09.2025 22:22:52] [INFO] [dispatcher] Update id=956956540 is not handled. Duration 15 ms by bot id=8291187695
+[26.09.2025 22:22:52] [ERROR] [dispatcher] Cause exception while process update id=956956540 by bot id=8291187695
+OperationalError: (sqlite3.OperationalError) no such column: users.sub_until
+[SQL: SELECT users.id, users.tg_id, users.created_at, users.sub_until 
+FROM users 
+WHERE users.tg_id = ?]
+[parameters: (760374544,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\sqlalchemy\dialects\sqlite\aiosqlite.py", line 177, in execute
+    self._adapt_connection._handle_exception(error)
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\sqlalchemy\dialects\sqlite\aiosqlite.py", line 337, in _handle_exception
+    raise error
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\sqlalchemy\dialects\sqlite\aiosqlite.py", line 159, in execute
+    self.await_(_cursor.execute(operation, parameters))
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiosqlite\cursor.py", line 40, in execute
+    await self._execute(self._cursor.execute, sql, parameters)
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiosqlite\cursor.py", line 32, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiosqlite\core.py", line 122, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiosqlite\core.py", line 105, in run
+    result = function()
+             ^^^^^^^^^^
+sqlite3.OperationalError: no such column: users.sub_until
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\velayne\bot\main.py", line 88, in cb_sub
+    st = await get_user_sub_status(call.from_user.id)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\velayne\infra\db.py", line 54, in get_user_sub_status
+    res = await s.execute(select(User).where(User.tg_id == tg_id))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\session.py", line 463, in execute
+    result = await greenlet_spawn(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 201, in greenlet_spawn
+    result = context.throw(*sys.exc_info())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\sqlalchemy\dialects\sqlite\aiosqlite.py", line 177, in execute
+    self._adapt_connection._handle_exception(error)
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\sqlalchemy\dialects\sqlite\aiosqlite.py", line 337, in _handle_exception
+    raise error
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\sqlalchemy\dialects\sqlite\aiosqlite.py", line 159, in execute
+    self.await_(_cursor.execute(operation, parameters))
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiosqlite\cursor.py", line 40, in execute
+    await self._execute(self._cursor.execute, sql, parameters)
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiosqlite\cursor.py", line 32, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiosqlite\core.py", line 122, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiosqlite\core.py", line 105, in run
+    result = function()
+             ^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: users.sub_until
+[SQL: SELECT users.id, users.tg_id, users.created_at, users.sub_until 
+FROM users 
+WHERE users.tg_id = ?]
+[parameters: (760374544,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[26.09.2025 22:22:52] [INFO] [dispatcher] Update id=956956543 is handled. Duration 313 ms by bot id=8291187695
+[26.09.2025 22:22:52] [INFO] [dispatcher] Update id=956956542 is handled. Duration 328 ms by bot id=8291187695
+[26.09.2025 22:22:52] [INFO] [dispatcher] Update id=956956539 is not handled. Duration 20218 ms by bot id=8291187695
+[26.09.2025 22:22:52] [ERROR] [dispatcher] Cause exception while process update id=956956539 by bot id=8291187695
+TelegramBadRequest: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
+Traceback (most recent call last):
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\velayne\bot\main.py", line 84, in cb_news
+    await call.answer()
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\client\bot.py", line 485, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 185, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
+[26.09.2025 22:22:52] [INFO] [dispatcher] Update id=956956541 is not handled. Duration 391 ms by bot id=8291187695
+[26.09.2025 22:22:52] [ERROR] [dispatcher] Cause exception while process update id=956956541 by bot id=8291187695
+TelegramBadRequest: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
+Traceback (most recent call last):
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\velayne\bot\main.py", line 98, in cb_settings
+    await call.answer()
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\client\bot.py", line 485, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 185, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
+[26.09.2025 22:23:07] [INFO] [dispatcher] Update id=956956544 is not handled. Duration 0 ms by bot id=8291187695
+[26.09.2025 22:23:07] [ERROR] [dispatcher] Cause exception while process update id=956956544 by bot id=8291187695
+ImportError: cannot import name 'reload_components' from 'velayne.infra.config' (C:\Users\Admin\Documents\GitHub\Velayne\velayne\infra\config.py)
+Traceback (most recent call last):
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\velayne\bot\main.py", line 116, in cb_admin_restart
+    from velayne.infra.config import reload_components
+ImportError: cannot import name 'reload_components' from 'velayne.infra.config' (C:\Users\Admin\Documents\GitHub\Velayne\velayne\infra\config.py)
+[26.09.2025 22:23:09] [INFO] [dispatcher] Update id=956956545 is not handled. Duration 0 ms by bot id=8291187695
+[26.09.2025 22:23:09] [ERROR] [dispatcher] Cause exception while process update id=956956545 by bot id=8291187695
+ImportError: cannot import name 'reload_components' from 'velayne.infra.config' (C:\Users\Admin\Documents\GitHub\Velayne\velayne\infra\config.py)
+Traceback (most recent call last):
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\velayne\bot\main.py", line 116, in cb_admin_restart
+    from velayne.infra.config import reload_components
+ImportError: cannot import name 'reload_components' from 'velayne.infra.config' (C:\Users\Admin\Documents\GitHub\Velayne\velayne\infra\config.py)
+[26.09.2025 22:23:10] [INFO] [dispatcher] Update id=956956546 is handled. Duration 171 ms by bot id=8291187695
+[26.09.2025 22:23:14] [INFO] [dispatcher] Update id=956956547 is not handled. Duration 0 ms by bot id=8291187695
+[26.09.2025 22:23:14] [ERROR] [dispatcher] Cause exception while process update id=956956547 by bot id=8291187695
+ImportError: cannot import name 'toggle_sandbox_mode' from 'velayne.infra.config' (C:\Users\Admin\Documents\GitHub\Velayne\velayne\infra\config.py)
+Traceback (most recent call last):
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\GitHub\Velayne\velayne\bot\main.py", line 104, in cb_admin_live
+    from velayne.infra.config import toggle_sandbox_mode
+ImportError: cannot import name 'toggle_sandbox_mode' from 'velayne.infra.config' (C:\Users\Admin\Documents\GitHub\Velayne\velayne\infra\config.py)
+[26.09.2025 22:23:19] [INFO] [dispatcher] Update id=956956548 is handled. Duration 202 ms by bot id=8291187695
+[26.09.2025 22:23:22] [INFO] [dispatcher] Update id=956956549 is handled. Duration 327 ms by bot id=8291187695
+[26.09.2025 22:23:22] [INFO] [main] [БОТ] бот жив
+[26.09.2025 22:23:52] [INFO] [main] [БОТ] бот жив
+[26.09.2025 22:24:22] [INFO] [main] [БОТ] бот жив
+[26.09.2025 22:24:52] [INFO] [main] [БОТ] бот жив
+[26.09.2025 22:25:22] [INFO] [main] [БОТ] бот жив

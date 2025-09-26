@@ -1,133 +1,153 @@
-import asyncio
+import threading
 import time
-import json
-from pathlib import Path
 from collections import defaultdict, deque
-import statistics
+from typing import Any, Callable
 
-# === Async semaphore for heavy sections (ML, IO) ===
-ML_SEMAPHORE = asyncio.BoundedSemaphore(2)
-IO_SEMAPHORE = asyncio.BoundedSemaphore(4)
+__all__ = [
+    "DATAIO_BUFFERS",
+    "get_dataio_buffer",
+    "flush_all_dataio_buffers",
+    "ORDER_TOKEN_BUCKET",
+    "CIRCUIT_BREAKERS",
+    "perf_summary",
+]
 
-PERF_LOG = Path("logs/perf.jsonl")
-PERF_LOG.parent.mkdir(exist_ok=True)
+# --- DataIO write-behind buffer ---
 
-# --- Token Bucket ---
+class WriteBehindBuffer:
+    def __init__(self, name, flush_every_secs=5, flush_every_records=500):
+        self.name = name
+        self._records = []
+        self._lock = threading.Lock()
+        self._last_flush = time.monotonic()
+        self._flush_every_secs = flush_every_secs
+        self._flush_every_records = flush_every_records
+
+    def append(self, record: dict):
+        with self._lock:
+            self._records.append(record)
+            now = time.monotonic()
+            if (
+                len(self._records) >= self._flush_every_records
+                or (now - self._last_flush) >= self._flush_every_secs
+            ):
+                self.flush()
+
+    def pop_all(self):
+        with self._lock:
+            items = list(self._records)
+            self._records.clear()
+            return items
+
+    def flush(self):
+        # Actual disk write is handled in dataio; here we just pop and return records.
+        recs = self.pop_all()
+        self._last_flush = time.monotonic()
+        return recs
+
+DATAIO_BUFFERS: dict[str, WriteBehindBuffer] = {}
+
+def get_dataio_buffer(name: str) -> WriteBehindBuffer:
+    if name not in DATAIO_BUFFERS:
+        DATAIO_BUFFERS[name] = WriteBehindBuffer(name)
+    return DATAIO_BUFFERS[name]
+
+def flush_all_dataio_buffers():
+    for buf in DATAIO_BUFFERS.values():
+        buf.flush()
+
+# --- Order token bucket ---
+
 class TokenBucket:
-    def __init__(self, rate, capacity):
-        self.rate = rate  # tokens/sec
+    def __init__(self, capacity=10, refill_rate=1.0):
         self.capacity = capacity
+        self.refill_rate = refill_rate
         self.tokens = capacity
-        self.last = time.time()
-        self._lock = asyncio.Lock()
+        self.last_refill = time.monotonic()
+        self._lock = threading.Lock()
 
-    async def get(self, n=1):
-        async with self._lock:
-            now = time.time()
-            elapsed = now - self.last
-            self.tokens = min(self.capacity, self.tokens + elapsed * self.rate)
-            self.last = now
+    def try_consume(self, n=1):
+        with self._lock:
+            now = time.monotonic()
+            elapsed = now - self.last_refill
+            refill = elapsed * self.refill_rate
+            self.tokens = min(self.capacity, self.tokens + refill)
+            self.last_refill = now
             if self.tokens >= n:
                 self.tokens -= n
                 return True
-            else:
-                return False
+            return False
 
-    async def wait(self, n=1):
-        while True:
-            if await self.get(n):
-                return
-            await asyncio.sleep(0.01)
+ORDER_TOKEN_BUCKET = TokenBucket(capacity=10, refill_rate=1.0)
 
-# --- Circuit breaker (per exchange/user) ---
+# --- Circuit breakers ---
+
 class CircuitBreaker:
-    def __init__(self, error_threshold=5, reset_timeout=30, admin_notify_cb=None):
-        self.error_count = 0
-        self.tripped = False
-        self.last_error = 0
-        self.error_threshold = error_threshold
+    def __init__(self, fail_max=5, reset_timeout=30):
+        self.fail_max = fail_max
         self.reset_timeout = reset_timeout
-        self.last_trip = 0
-        self.admin_notify_cb = admin_notify_cb
+        self.failures = 0
+        self.last_failure = 0
+        self.open = False
 
-    def on_error(self, exc=None):
-        self.error_count += 1
-        self.last_error = time.time()
-        if self.error_count >= self.error_threshold and not self.tripped:
-            self.tripped = True
-            self.last_trip = time.time()
-            if self.admin_notify_cb:
-                try:
-                    self.admin_notify_cb(f"Circuit breaker TRIPPED: {exc}")
-                except Exception:
-                    pass
+    def record_success(self):
+        self.failures = 0
+        self.open = False
 
-    def on_success(self):
-        self.error_count = 0
-        if self.tripped and time.time() - self.last_trip > self.reset_timeout:
-            self.tripped = False
+    def record_failure(self):
+        self.failures += 1
+        self.last_failure = time.monotonic()
+        if self.failures >= self.fail_max:
+            self.open = True
 
-    def is_tripped(self):
-        if self.tripped:
-            if time.time() - self.last_trip > self.reset_timeout:
-                self.tripped = False
-                self.error_count = 0
+    def is_open(self):
+        if self.open:
+            if (time.monotonic() - self.last_failure) > self.reset_timeout:
+                self.reset()
                 return False
             return True
         return False
 
-# --- Latency histograms ---
-class LatencyStats:
-    def __init__(self, maxlen=1200):
-        self.samples = defaultdict(lambda: deque(maxlen=maxlen))
+    def reset(self):
+        self.failures = 0
+        self.open = False
 
-    def add(self, key, value):
-        self.samples[key].append(value)
+CIRCUIT_BREAKERS: dict[str, CircuitBreaker] = {
+    "exchange": CircuitBreaker(),
+    "news": CircuitBreaker(),
+}
 
-    def percentiles(self, key):
-        arr = list(self.samples[key])
-        if not arr:
-            return {"p50": None, "p90": None, "p99": None}
-        arr.sort()
-        return {
-            "p50": arr[int(len(arr)*0.50)] if len(arr) else None,
-            "p90": arr[int(len(arr)*0.90)] if len(arr) else None,
-            "p99": arr[int(len(arr)*0.99)] if len(arr) else None,
-            "count": len(arr)
+# --- Perf summary ---
+
+PERF_METRICS = defaultdict(lambda: deque(maxlen=200))
+
+def record_perf(metric: str, dt: float):
+    PERF_METRICS[metric].append(dt)
+
+def percentile(vals, p):
+    if not vals:
+        return None
+    vals = sorted(vals)
+    k = int(len(vals) * (p / 100.0))
+    k = min(len(vals) - 1, max(0, k))
+    return vals[k]
+
+def perf_summary():
+    result = {}
+    for k, v in PERF_METRICS.items():
+        result[k] = {
+            "p50": percentile(v, 50),
+            "p90": percentile(v, 90),
+            "p99": percentile(v, 99),
+            "count": len(v),
         }
-
-LATENCY_STATS = LatencyStats()
-QUEUE_PRESSURE = defaultdict(int)
-CIRCUIT_BREAKERS = {}  # key: (exchange, user_id)
-
-def update_latency(key, value):
-    LATENCY_STATS.add(key, value)
-
-def flush_perf_log():
-    # Write summary with percentiles for main paths
-    summary = {}
-    for key in ["inference", "place_order", "fetch_news"]:
-        summary[key] = LATENCY_STATS.percentiles(key)
-    summary['ts'] = int(time.time())
-    with open(PERF_LOG, "a", encoding="utf-8") as f:
-        f.write(json.dumps(summary) + "\n")
-
-def get_perf_summary():
-    data = {}
-    for key in ["inference", "place_order", "fetch_news"]:
-        p = LATENCY_STATS.percentiles(key)
-        data[key] = {k:v for k,v in p.items()}
-    # Очереди
-    data["order_queues"] = dict(QUEUE_PRESSURE)
-    # Circuit breakers
-    data["circuit_breakers"] = {
-        k: dict(tripped=cb.is_tripped(), err=cb.error_count, last_trip=cb.last_trip)
-        for k, cb in CIRCUIT_BREAKERS.items()
+    # token bucket/circuit breakers state
+    result["order_token_bucket"] = {
+        "tokens": getattr(ORDER_TOKEN_BUCKET, "tokens", None),
+        "capacity": getattr(ORDER_TOKEN_BUCKET, "capacity", None),
     }
-    return data
-
-def get_circuit_breaker(exchange, user_id, notify_admin=None):
-    key = (exchange, user_id)
-    if key not in CIRCUIT_BREAKERS:
-        CIRCUIT_BREAKERS[key] = CircuitBreaker(admin_notify_cb=notify_admin)
-    return CIRCUIT_BREAKERS[key]
+    result["circuit_breakers"] = {
+        name: {"open": cb.is_open(), "failures": cb.failures}
+        for name, cb in CIRCUIT_BREAKERS.items()
+    }
+    return result

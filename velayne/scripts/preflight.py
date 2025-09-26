@@ -1,6 +1,7 @@
 import sys
 import os
-import traceback
+import importlib
+from pathlib import Path
 
 def printc(text, color="green"):
     c = {"red": "\033[91m", "green": "\033[92m", "reset": "\033[0m"}
@@ -75,6 +76,15 @@ def main():
         vprint("mode_switch_message: OK")
     except Exception:
         printc("Ошибка: Не найдена функция mode_switch_message в velayne/bot/ui.py", "red")
+        ok = False
+
+    # 8. Проверка на все импорты внутри velayne через linkcheck (dry-run)
+    try:
+        from velayne.scripts import linkcheck
+        linkcheck.main()
+        vprint("linkcheck: OK")
+    except Exception as e:
+        printc(f"[WARN] linkcheck error: {e}", "red")
         ok = False
 
     if ok:

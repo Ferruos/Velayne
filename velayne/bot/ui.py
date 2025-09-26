@@ -1,60 +1,96 @@
-from datetime import datetime
-import pytz
-from velayne.infra.i18n import tr
+from aiogram.types import (
+    ReplyKeyboardMarkup,
+    KeyboardButton,
+    InlineKeyboardMarkup,
+    InlineKeyboardButton,
+)
+from velayne.infra.config import settings
 
-def _format_dt(dt: datetime, tz: str = "UTC", lang: str = "en") -> str:
-    try:
-        tzinfo = pytz.timezone(tz)
-        dt = dt.replace(tzinfo=pytz.UTC).astimezone(tzinfo)
-    except Exception:
-        pass
-    fmt = "%d.%m.%Y %H:%M" if lang == "ru" else "%Y-%m-%d %H:%M"
-    return dt.strftime(fmt)
+def main_reply_menu(is_admin: bool) -> ReplyKeyboardMarkup:
+    rows = [
+        [KeyboardButton(text="📊 Портфель"), KeyboardButton(text="⚙️ Настройки")],
+        [KeyboardButton(text=f"🧪 Режим: {'Sandbox' if settings.SERVICE_MODE == 'sandbox' else 'Live'}"),
+         KeyboardButton(text="🧾 Подписка")],
+        [KeyboardButton(text="ℹ️ Справка")],
+    ]
+    if is_admin:
+        rows.insert(2, [KeyboardButton(text="⚡ Диагностика")])
+    return ReplyKeyboardMarkup(keyboard=rows, resize_keyboard=True)
 
-def show_portfolio_summary(summary: dict, tz: str = "UTC", lang: str = "en") -> str:
-    txt = "<b>" + tr("portfolio_user", lang) + "</b>\n"
-    for kind, acc in summary.items():
-        if kind.startswith("total"):
-            continue
-        label = "DEMO" if kind == "demo" else "LIVE"
-        txt += f"<b>{label}:</b> {tr('balance', lang)}: {acc['balance']:.2f} | {tr('trades', lang)}: {acc['n_trades']} | {tr('created', lang)}: {_format_dt(acc['created_at'], tz, lang)}\n"
-    txt += f"<b>{tr('total_balance', lang)}:</b> {summary.get('total_balance', 0):.2f}\n"
-    return txt
+def back_inline_menu():
+    return InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="⬅️ Назад", callback_data="menu:main")]
+    ])
 
-def preset_profiles_message(lang: str = "en") -> str:
-    txt = "<b>" + tr("ready_profiles", lang) + "</b>:\n\n"
-    txt += "🟢 <b>" + tr("profile_conservative", lang) + "</b>: " + tr("desc_conservative", lang) + "\n"
-    txt += "🟡 <b>" + tr("profile_balanced", lang) + "</b>: " + tr("desc_balanced", lang) + "\n"
-    txt += "🔴 <b>" + tr("profile_aggressive", lang) + "</b>: " + tr("desc_aggressive", lang) + "\n\n"
-    txt += tr("choose_style", lang)
-    return txt
+def admin_diag_inline():
+    return InlineKeyboardMarkup(inline_keyboard=[
+        [
+            InlineKeyboardButton("Проверить БД", callback_data="diag:db"),
+            InlineKeyboardButton("Сервисы", callback_data="diag:svc"),
+        ],
+        [
+            InlineKeyboardButton("Последние логи", callback_data="diag:logs"),
+            InlineKeyboardButton("Пинг биржи", callback_data="diag:ping"),
+        ],
+        [
+            InlineKeyboardButton("Проверка оннх модели", callback_data="diag:onnx"),
+            InlineKeyboardButton("⬅️ Назад", callback_data="menu:main"),
+        ]
+    ])
 
-def admin_model_metrics_message(meta: dict, lang: str = "en") -> str:
-    if not meta:
-        return tr("no_training_data", lang)
-    txt = f"*{tr('model_overall', lang)}:*\n"
-    txt += f"- {tr('version', lang)}: {meta.get('version','?')}\n"
-    txt += f"- {tr('date', lang)}: {meta.get('updated','?')}\n"
-    txt += f"- AUC: {meta.get('auc',0):.3f}\n"
-    txt += f"- {tr('accuracy', lang)}: {meta.get('accuracy',0):.3f}\n"
-    txt += f"- F1: {meta.get('f1',0):.3f}\n"
-    txt += f"- {tr('threshold', lang)}: {meta.get('best_thresh',0.5):.2f}\n"
-    txt += f"- N = {meta.get('sample_count', '?')}\n"
-    if "sources" in meta and meta["sources"]:
-        txt += f"\n*{tr('by_sources', lang)}:*\n"
-        txt += "| " + tr('source', lang) + " | AUC | Acc | F1 | N |\n"
-        txt += "|----------|-----|-----|----|---|\n"
-        for src, m in meta["sources"].items():
-            txt += f"| {src} | {m['auc']:.3f} | {m['accuracy']:.3f} | {m['f1']:.3f} | {m['count']} |\n"
-    return f"```\n{txt}```"
+def settings_inline():
+    return InlineKeyboardMarkup(inline_keyboard=[
+        [
+            InlineKeyboardButton("Частота отчётов", callback_data="settings:freq"),
+            InlineKeyboardButton("Уведомления", callback_data="settings:notify"),
+        ],
+        [
+            InlineKeyboardButton("Стратегия по умолчанию", callback_data="settings:strategy"),
+            InlineKeyboardButton("Язык", callback_data="settings:lang"),
+        ],
+        [
+            InlineKeyboardButton("⬅️ Назад", callback_data="menu:main")
+        ]
+    ])
 
-def dashboard_message(url: str, lang: str = "en") -> str:
-    return tr("dashboard_hint", lang, url=url)
-
-def mode_switch_message(new_mode: str, lang: str = "en") -> str:
-    if new_mode == "live":
-        return tr("mode_live", lang)
-    elif new_mode == "sandbox":
-        return tr("mode_sandbox", lang)
+def subscription_inline(is_active: bool = False):
+    if is_active:
+        rows = [
+            [InlineKeyboardButton("Продлить", callback_data="subs:pay")],
+            [InlineKeyboardButton("⬅️ Назад", callback_data="menu:main")]
+        ]
     else:
-        return tr("mode_switched", lang, mode=new_mode)
+        rows = [
+            [InlineKeyboardButton("Оплатить", callback_data="subs:pay")],
+            [InlineKeyboardButton("⬅️ Назад", callback_data="menu:main")]
+        ]
+    return InlineKeyboardMarkup(inline_keyboard=rows)
+
+def mode_switch_inline(is_admin: bool):
+    if is_admin:
+        rows = [
+            [InlineKeyboardButton("🧪 Sandbox", callback_data="mode:sandbox"),
+             InlineKeyboardButton("💹 Live", callback_data="mode:live")],
+            [InlineKeyboardButton("⬅️ Назад", callback_data="menu:main")]
+        ]
+        return InlineKeyboardMarkup(inline_keyboard=rows)
+    return back_inline_menu()
+
+def data_provider_inline(last_bar_ts: str = ""):
+    rows = [
+        [InlineKeyboardButton("Докачать сейчас", callback_data="data:fetch"),
+         InlineKeyboardButton("Показать последнюю свечу", callback_data="data:last")],
+        [InlineKeyboardButton("Источник", callback_data="data:src")],
+        [InlineKeyboardButton("⬅️ Назад", callback_data="menu:main")]
+    ]
+    return InlineKeyboardMarkup(inline_keyboard=rows)
+
+__all__ = [
+    "main_reply_menu",
+    "back_inline_menu",
+    "admin_diag_inline",
+    "settings_inline",
+    "subscription_inline",
+    "mode_switch_inline",
+    "data_provider_inline"
+]

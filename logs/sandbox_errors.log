@@ -1,0 +1,505 @@
+2025-09-26T17:34:45.039580 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:34:46.770428 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:34:48.772545 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:34:52.807717 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:34:58.836406 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:35:06.847954 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:35:14.854774 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:35:16.452831 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:35:16.861941 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:35:18.471722 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:35:22.499489 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:35:28.494494 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:35:36.508951 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:35:44.861775 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:35:45.940689 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:35:46.515503 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:35:47.973461 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:35:51.991712 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:35:58.007343 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:36:06.036562 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:36:14.873780 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:36:15.951694 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:36:16.060988 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:36:17.979589 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:36:21.992010 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:36:28.014006 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:36:36.035752 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:36:44.881493 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:36:45.857279 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:36:46.059074 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:36:47.882451 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:36:51.894668 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:36:57.936477 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:37:05.936380 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:37:14.894649 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:37:15.930631 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:37:16.333744 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:37:18.344233 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:37:22.372034 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:37:28.388660 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:37:36.396894 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:37:44.894556 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:37:45.836668 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:37:46.415221 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:37:47.846802 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:37:51.876582 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:37:57.916774 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:38:05.929626 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:38:14.894424 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:38:15.915445 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:38:15.921933 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:38:17.937438 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:38:21.979616 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:38:27.996640 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:38:36.005699 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:38:44.895775 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:38:45.859651 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:38:46.014629 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:38:47.897634 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:38:51.908787 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:38:57.928370 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:39:05.960346 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:39:14.893674 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:39:15.944635 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:39:15.991522 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:39:18.015340 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:39:22.032407 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:39:28.045830 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:39:36.070686 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:39:44.894142 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:39:46.071409 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:39:46.939719 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:39:48.962946 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:39:52.973624 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:39:58.983230 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:40:06.987920 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:40:14.898763 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:40:16.384973 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:40:17.008000 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:40:18.400912 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:40:22.409273 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:40:28.439176 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:40:36.466905 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:40:44.902120 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:40:46.443958 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:40:46.495176 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:40:48.516826 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:40:52.525100 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:40:58.549792 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:41:06.584708 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:41:14.913719 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:41:16.557660 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:41:16.605211 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:41:18.582174 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:41:22.614844 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:41:28.627470 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:41:36.659232 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:41:44.942378 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:41:46.195710 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:41:46.679224 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:41:48.212712 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:41:52.223843 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:41:58.259727 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:42:06.286857 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:42:14.936774 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:42:15.987848 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:42:16.300903 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:42:18.013769 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:42:22.028915 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:42:28.033372 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:42:36.066707 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:42:44.937785 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:42:46.067613 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:42:46.083593 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:42:48.090025 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:42:52.108912 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:42:58.131930 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:43:06.156980 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:43:14.945991 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:43:16.207798 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:43:16.261184 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:43:18.263567 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:43:22.278957 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:43:28.294122 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:43:36.303200 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:43:44.966830 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:43:45.984375 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:43:46.311341 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:43:48.006646 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:43:52.023956 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:43:58.045986 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:44:06.041967 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:44:14.974965 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:44:16.045339 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:44:16.398059 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:44:18.406013 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:44:22.423110 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:44:28.460026 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:44:36.470918 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:44:44.985340 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:44:45.954001 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:44:46.483949 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:44:47.965425 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:44:51.984101 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:44:58.005131 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:45:06.022210 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:45:14.990984 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:45:16.028922 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:45:16.417868 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:45:18.435210 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:45:22.439350 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:45:28.447353 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:45:36.477692 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:45:44.992210 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:45:46.565044 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:45:46.617700 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:45:48.643742 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:45:52.656160 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:45:58.686954 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:46:06.710069 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:46:14.999102 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:46:16.483177 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:46:16.733110 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:46:18.509264 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:46:22.518089 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:46:28.559100 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:46:36.574921 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:46:45.002558 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:46:46.375035 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:46:46.576188 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:46:48.407870 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:46:52.431980 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:46:58.466149 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:47:06.490086 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:47:15.011221 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:47:16.694480 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:47:16.747893 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:47:18.769244 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:47:22.787151 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:47:28.798426 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:47:36.837032 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:47:45.024786 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:47:46.653435 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:47:46.854502 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:47:48.660039 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:47:52.692105 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:47:58.715508 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:48:06.727967 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:48:15.033164 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:48:16.707005 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:48:16.738193 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:48:18.732012 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:48:22.720625 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:48:28.752136 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:48:36.789546 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:48:45.036087 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:48:46.069062 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:48:46.796050 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:48:48.096101 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:48:52.111237 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:48:58.140849 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:49:15.701835 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:49:16.699119 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:49:18.727884 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:49:22.733402 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:49:28.747264 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:49:36.773235 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:49:44.429576 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:49:45.479277 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:49:46.783095 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:49:47.498251 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:49:51.511354 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:49:57.532598 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:50:05.568087 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:50:14.430178 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:50:15.575439 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:50:15.582332 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:50:17.612529 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:50:21.621874 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:50:27.648754 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:50:35.678226 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:52:04.443503 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:52:05.414203 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:52:07.415242 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:52:11.439748 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:52:17.473767 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:52:25.493390 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:52:32.985244 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:52:33.912662 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:52:35.498053 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:52:35.920457 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:52:39.937290 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:52:45.943758 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:52:53.960327 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:53:02.995023 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:53:03.948205 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:53:03.995776 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:53:06.017082 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:53:10.043017 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:53:16.058880 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:53:24.080767 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:53:33.007106 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:53:34.068236 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:53:34.347018 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:53:36.386277 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:53:40.409200 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:53:46.431313 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:53:54.450352 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:54:03.008796 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:54:04.577260 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:54:04.625037 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:54:06.667871 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:54:10.666360 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:54:16.693134 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:54:24.718306 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:54:33.015978 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:54:34.641326 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:54:34.718085 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:54:36.677372 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:54:40.691670 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:54:46.724297 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:54:54.753494 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:55:03.017942 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:55:04.623458 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:55:04.779315 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:55:06.629906 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:55:10.652706 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:55:16.671465 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:55:24.657638 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:55:33.020844 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:55:34.666455 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:55:34.675826 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:55:36.697446 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:55:40.712358 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:55:46.723386 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:55:54.756001 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:56:03.018261 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:56:04.691597 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:56:04.768265 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:56:06.711382 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:56:10.745545 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:56:16.768273 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:56:24.781005 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:56:33.013245 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:56:34.640562 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:56:34.779648 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:56:36.662931 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:56:40.682949 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:56:46.691603 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:56:54.730104 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:57:03.033854 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:57:04.054498 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:57:04.747409 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:57:06.085934 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:57:10.116345 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:57:16.127426 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:57:24.155089 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:57:33.036033 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:57:34.142436 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:57:34.192411 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:57:36.229087 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:57:40.238769 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:57:46.268538 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:57:54.308678 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:58:03.037327 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:58:04.041683 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:58:04.307622 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:58:06.051617 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:58:10.073768 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:58:16.104555 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:58:24.106592 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:58:33.043454 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:58:34.108552 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:58:34.654627 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:58:36.661642 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:58:40.690230 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:58:46.703671 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:58:54.733927 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:59:03.045182 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:59:04.658833 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:59:04.721572 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:59:06.689517 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:59:10.710593 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:59:16.744999 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:59:24.763176 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T17:59:33.047303 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T17:59:34.656565 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T17:59:34.766006 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T17:59:36.697591 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T17:59:40.728450 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T17:59:46.738848 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T17:59:54.765519 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T18:00:03.052042 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T18:00:04.657478 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T18:00:04.779749 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T18:00:06.684019 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T18:00:10.690341 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T18:00:16.725466 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T18:00:24.730788 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T18:00:33.056826 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T18:00:34.666745 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T18:00:34.743540 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T18:00:36.692871 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T18:00:40.718097 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T18:00:46.721334 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T18:00:54.745617 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T18:01:03.061849 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T18:01:04.452278 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T18:01:04.760682 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T18:01:06.451303 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T18:01:10.465796 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T18:01:16.477907 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T18:01:24.481521 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T18:01:33.064755 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T18:01:34.468517 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T18:01:34.469514 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T18:01:36.476289 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T18:01:40.499823 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T18:01:46.513885 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T18:01:54.519747 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T18:02:03.065339 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T18:02:04.628439 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T18:02:04.683693 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T18:02:06.694805 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T18:02:10.713663 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T18:02:16.726435 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T18:02:24.751664 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T18:02:33.065769 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T18:02:34.687574 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T18:02:34.749739 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T18:02:36.712464 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T18:02:40.740474 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T18:02:46.768930 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T18:02:54.773729 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T18:03:03.064853 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T18:03:04.110237 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T18:03:04.780816 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T18:03:06.132431 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T18:03:10.158572 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T18:03:16.180799 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T18:03:24.205355 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T18:03:33.063735 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T18:03:34.190760 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T18:03:34.684740 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T18:03:36.689809 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T18:03:40.696289 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T18:03:46.730460 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T18:03:54.735955 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T18:04:03.070646 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T18:04:04.128725 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T18:04:04.749245 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T18:04:06.146947 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T18:04:10.177996 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T18:04:16.206639 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T18:04:24.220824 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T18:04:33.073379 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T18:04:34.063563 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T18:04:34.233802 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T18:04:36.094478 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T18:04:40.125046 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T18:04:46.144163 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T18:05:17.533475 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T18:05:18.526231 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T18:05:20.546284 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T18:05:24.574891 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T18:05:30.580094 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T18:05:38.617692 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T18:05:46.045391 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T18:05:47.152860 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T18:05:48.616370 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T18:05:49.163352 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T18:05:53.186012 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T18:05:59.203335 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T18:06:07.230984 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T18:06:16.067916 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T18:06:17.237604 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T18:06:17.673932 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T18:06:19.698829 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T18:06:23.715941 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T18:06:29.721938 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T18:06:37.747776 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T18:06:46.062314 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T18:06:47.675934 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T18:06:47.753085 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T18:06:49.697984 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T18:06:53.728013 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T18:06:59.729407 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T18:07:07.758935 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T18:07:16.075248 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T18:07:17.710954 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T18:07:17.759003 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T18:07:19.717066 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T18:07:23.729883 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T18:07:29.744920 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T18:07:37.748098 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T18:07:46.078677 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T18:07:47.736973 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T18:07:47.767111 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T18:07:49.792352 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T18:07:53.814894 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T18:07:59.837966 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T18:08:07.848976 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T18:08:16.074928 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T18:08:17.715014 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T18:08:17.870956 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T18:08:19.723225 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T18:08:23.755610 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T18:08:29.775723 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T18:08:37.773117 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T18:08:46.092644 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T18:08:47.048829 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T18:08:47.778759 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T18:08:49.082286 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T18:08:53.107956 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T18:08:59.107911 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T18:09:07.125388 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T18:09:16.095988 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T18:09:17.277947 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T18:09:17.331538 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T18:09:19.371957 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T18:09:23.371949 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T18:09:29.390305 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T18:09:37.391480 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T18:09:46.099241 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T18:09:47.083154 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T18:09:47.406255 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T18:09:49.101194 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T18:09:53.119464 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T18:09:59.140497 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T18:10:07.156442 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T18:10:16.106993 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T18:10:17.181261 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T18:10:18.109474 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T18:10:20.126117 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T18:10:24.151263 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T18:10:30.169994 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T18:10:38.176229 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T18:10:46.116289 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T18:10:47.476163 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T18:10:48.187907 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T18:10:49.509807 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T18:10:53.539541 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T18:10:59.547120 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T18:11:07.573362 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T18:11:16.114453 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T18:11:17.132088 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T18:11:17.584197 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T18:11:19.154714 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T18:11:23.158400 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T18:11:29.197127 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T18:11:37.223107 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T18:11:46.110139 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T18:11:47.227200 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T18:11:47.284676 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T18:11:49.303773 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T18:11:53.319735 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T18:11:59.347979 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T18:12:07.360178 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential
+2025-09-26T18:12:16.119496 [ORDER] Placing buy 0.001 BTC/USDT on binance (testnet=True)
+2025-09-26T18:12:17.198200 [RETRY] create_market_buy_order attempt=1 error=binance requires "apiKey" credential
+2025-09-26T18:12:17.367180 [ORDER] Error: Retries exceeded for create_market_buy_order
+2025-09-26T18:12:19.214480 [RETRY] create_market_buy_order attempt=2 error=binance requires "apiKey" credential
+2025-09-26T18:12:23.227077 [RETRY] create_market_buy_order attempt=3 error=binance requires "apiKey" credential
+2025-09-26T18:12:29.250479 [RETRY] create_market_buy_order attempt=4 error=binance requires "apiKey" credential
+2025-09-26T18:12:37.282997 [RETRY] create_market_buy_order attempt=5 error=binance requires "apiKey" credential

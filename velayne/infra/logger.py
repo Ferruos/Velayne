@@ -1,39 +1,31 @@
 import logging
-import os
-from logging.handlers import RotatingFileHandler, TimedRotatingFileHandler
+import sys
 from pathlib import Path
+from datetime import datetime
 
-LOG_DIR = Path("logs")
-LOG_DIR.mkdir(exist_ok=True)
+from velayne.infra.config import settings
 
-def get_logfile(name):
-    return LOG_DIR / f"{name}.log"
+LOG_DIR = Path(settings.LOG_DIR)
+LOG_DIR.mkdir(exist_ok=True, parents=True)
+LOG_FILE = LOG_DIR / "velayne.log"
+
+class RussianFormatter(logging.Formatter):
+    def format(self, record):
+        ts = datetime.fromtimestamp(record.created).strftime('%d.%m.%Y %H:%M:%S')
+        prefix = f"[{ts}] [{record.levelname}] [{record.module}]"
+        msg = super().format(record)
+        return f"{prefix} {msg}"
 
 def setup_logging():
-    loggers = {
-        "": get_logfile("velayne"),  # root
-        "bot": get_logfile("bot"),
-        "engine": get_logfile("engine"),
-        "scheduler": get_logfile("scheduler"),
-    }
-    max_bytes = 10 * 1024 * 1024  # 10MB
-    backup_count = 3
-
-    for logger_name, file_path in loggers.items():
-        logger = logging.getLogger(logger_name)
-        logger.handlers.clear()
-        handler = RotatingFileHandler(file_path, maxBytes=max_bytes, backupCount=backup_count, encoding="utf-8")
-        # Also rotate daily by time
-        timed_handler = TimedRotatingFileHandler(file_path, when="D", interval=1, backupCount=backup_count, encoding="utf-8")
-        formatter = logging.Formatter("%(asctime)s %(levelname)s %(name)s %(message)s")
-        handler.setFormatter(formatter)
-        timed_handler.setFormatter(formatter)
-        logger.addHandler(handler)
-        logger.addHandler(timed_handler)
-        logger.setLevel(logging.INFO)
-
-try:
-    setup_logging()
-    logger = logging.getLogger("velayne")
-except Exception:
     logger = logging.getLogger()
+    logger.setLevel(logging.INFO)
+    fmt = RussianFormatter('%(message)s')
+    ch = logging.StreamHandler(sys.stdout)
+    ch.setFormatter(fmt)
+    fh = logging.FileHandler(LOG_FILE, encoding="utf-8")
+    fh.setFormatter(fmt)
+    if logger.hasHandlers():
+        logger.handlers.clear()
+    logger.addHandler(ch)
+    logger.addHandler(fh)
+    return str(LOG_FILE)

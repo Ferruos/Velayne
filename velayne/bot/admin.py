@@ -1,101 +1,87 @@
-from aiogram import Router, F
-from aiogram.filters import Command
-from aiogram.types import Message, CallbackQuery
-from velayne.infra.config import settings
-from velayne.infra.db import get_users_count, get_global_mode, set_global_mode
-from velayne.infra import health
-from velayne.infra import retention
-from .ui import (
-    admin_panel,
-    diagnostics_message,
-    self_heal_result,
-    admin_model_metrics_message,
-    admin_strategy_mix_message,
-    retention_summary_message,
-    retention_policy_message,
-    selftest_message,
-)
-from pathlib import Path
-import json
+import logging
 import asyncio
+import platform
+from datetime import datetime
+from aiogram import Router, F
+from aiogram.types import Message, CallbackQuery, InputFile
+from velayne.infra.config import settings
+from velayne.infra.db import get_users_count, get_global_mode
+from velayne.bot.ui import main_reply_menu, admin_diag_inline, back_inline_menu
+from velayne.bot.texts_ru import DIAG_START, DIAG_DONE, ONLY_ADMIN, ERROR_GENERIC
+import os
+import pathlib
+import sys
+import traceback
 
-router = Router()
+router = Router(name="admin")
 
-def is_admin(msg_or_cb):
-    user_id = None
-    if hasattr(msg_or_cb, "from_user"):
-        user_id = msg_or_cb.from_user.id
-    elif hasattr(msg_or_cb, "message") and msg_or_cb.message and hasattr(msg_or_cb.message, "from_user"):
-        user_id = msg_or_cb.message.from_user.id
-    return int(user_id) == settings.ADMIN_ID
+_start_time = datetime.utcnow()
 
-@router.message(Command("admin"))
-async def admin_cmd(msg: Message):
-    if not is_admin(msg):
-        await msg.answer("❌ Нет доступа.")
+async def send_text_safely(bot, chat_id, text, filename_prefix="diag"):
+    blocks = [text[i:i+4096] for i in range(0, len(text), 4096)]
+    if len(text.encode("utf-8")) > 100_000:
+        fname = f"logs/{filename_prefix}-{datetime.utcnow().strftime('%Y%m%d-%H%M%S')}.txt"
+        with open(fname, "w", encoding="utf-8") as f:
+            f.write(text)
+        await bot.send_document(chat_id, InputFile(fname), caption=f"{filename_prefix}.txt")
         return
-    users_count = await get_users_count()
-    mode = await get_global_mode()
-    text, kb = admin_panel(mode, users_count)
-    await msg.answer(text, reply_markup=kb)
+    for block in blocks:
+        await bot.send_message(chat_id, block)
 
-# ML train now with source/weights controls
-@router.callback_query(F.data.startswith("admin:train_ml"))
-async def admin_train_ml_cb(cb: CallbackQuery):
-    if not is_admin(cb):
-        await cb.answer("Нет доступа.", show_alert=True)
-        return
-    # admin:train_ml:sandbox:1.0:live:0.5  (пример)
-    args = cb.data.split(":")[2:]
-    sources = []
-    weights = {}
-    if not args:
-        sources = ["sandbox", "live"]
-        weights = {"sandbox": 0.5, "live": 1.0}
-    else:
-        for i in range(0, len(args), 2):
-            if i+1 < len(args):
-                sources.append(args[i])
-                weights[args[i]] = float(args[i+1])
-    from velayne.core.ml import train_from_logs
-    meta = train_from_logs(sources=sources, weights=weights)
-    if meta:
-        await cb.answer("Обучение завершено.")
-        await cb.message.answer(admin_model_metrics_message(meta), parse_mode="MarkdownV2")
-    else:
-        await cb.answer("Недостаточно данных для обучения.", show_alert=True)
+async def gather_diag():
+    try:
+        result = []
+        result.append(f"Диагностика на {datetime.utcnow().strftime('%d.%m.%Y %H:%M')} UTC")
+        result.append(f"Python: {sys.version.split()[0]}, ОС: {platform.platform()}")
+        env_path = pathlib.Path(settings.model_config.get('env_file', '.env'))
+        result.append(f".env: {env_path} найден={env_path.exists()}")
+        active = ["sandbox=ON", "scheduler=ON", f"bot={'ON' if settings.TG_TOKEN else 'OFF'}"]
+        result.append(f"Компоненты: {', '.join(active)}")
+        log_path = pathlib.Path(settings.LOG_DIR) / "velayne.log"
+        if log_path.exists():
+            sz = log_path.stat().st_size
+            mtime = datetime.utcfromtimestamp(log_path.stat().st_mtime)
+            result.append(f"Лог: {log_path} размер={sz} байт, обновлён={mtime.strftime('%d.%m.%Y %H:%M')}")
+            with open(log_path, "r", encoding="utf-8") as f:
+                lines = f.readlines()[-20:]
+                result.append("Последние строки лога:\n" + "".join(lines))
+        else:
+            result.append(f"Лог: {log_path} не найден")
+        try:
+            mode = await asyncio.wait_for(get_global_mode(), timeout=5)
+        except Exception as e:
+            mode = f"ошибка: {e}"
+        try:
+            users = await asyncio.wait_for(get_users_count(), timeout=5)
+        except Exception as e:
+            users = f"ошибка: {e}"
+        result.append(f"БД: режим={mode}, пользователей={users}")
+        uptime = str(datetime.utcnow() - _start_time).split(".")[0]
+        result.append(f"Uptime: {uptime}")
+        return "\n".join(result)
+    except Exception as e:
+        return f"❗Ошибка диагностики: {e}"
 
-# Кнопки для источников и весов
-@router.callback_query(F.data == "admin:train_ml_controls")
-async def admin_train_ml_controls_cb(cb: CallbackQuery):
-    if not is_admin(cb):
-        await cb.answer("Нет доступа.", show_alert=True)
+@router.message(F.text == "⚡ Диагностика")
+async def diag_entry(msg: Message):
+    if not settings.ADMIN_ID or str(msg.from_user.id) != str(settings.ADMIN_ID):
+        await msg.answer(ONLY_ADMIN, reply_markup=back_inline_menu())
         return
-    from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-    kb = InlineKeyboardMarkup(
-        inline_keyboard=[
-            [
-                InlineKeyboardButton("Sandbox 0.5", callback_data="admin:train_ml:sandbox:0.5"),
-                InlineKeyboardButton("Live 1.0", callback_data="admin:train_ml:live:1.0"),
-                InlineKeyboardButton("Both (default)", callback_data="admin:train_ml:sandbox:0.5:live:1.0"),
-            ]
-        ]
-    )
-    await cb.answer()
-    await cb.message.answer("Выберите источники и веса для обучения:", reply_markup=kb)
+    await msg.answer("⚡ Диагностика", reply_markup=admin_diag_inline())
 
-# Show recommendations
-@router.callback_query(F.data == "admin:mix_strat")
-async def admin_mix_strat_cb(cb: CallbackQuery):
-    if not is_admin(cb):
-        await cb.answer("Нет доступа.", show_alert=True)
+@router.callback_query(F.data == "diag:db")
+async def diag_db(call: CallbackQuery):
+    if not settings.ADMIN_ID or str(call.from_user.id) != str(settings.ADMIN_ID):
+        await call.answer(ONLY_ADMIN, show_alert=True)
+        await call.message.edit_text(ONLY_ADMIN, reply_markup=back_inline_menu())
         return
-    p = Path("data/models/strategy_mix.json")
-    if not p.exists():
-        await cb.message.answer("Нет рекомендаций.")
-        return
-    with open(p, "r", encoding="utf-8") as f:
-        mix = json.load(f)
-    await cb.message.answer(admin_strategy_mix_message(mix), parse_mode="MarkdownV2")
-
-# Остальные admin callbacks не менялись
+    sent = await call.message.edit_text(DIAG_START, reply_markup=back_inline_menu())
+    async def run_diag():
+        try:
+            report = await asyncio.wait_for(gather_diag(), timeout=30)
+            await send_text_safely(call.bot, call.message.chat.id, report)
+            await call.message.answer(DIAG_DONE, reply_markup=admin_diag_inline())
+        except Exception as e:
+            logging.error(f"[ADMIN] diag_db fail: {e}")
+            await call.message.answer(ERROR_GENERIC, reply_markup=back_inline_menu())
+    asyncio.create_task(run_diag())

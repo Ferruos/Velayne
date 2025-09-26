@@ -1,225 +1,145 @@
-import datetime
-from typing import Optional, List
-from sqlalchemy import (
-    Column, Integer, String, DateTime, Boolean, JSON, ForeignKey, Text, Enum, Float, func
-)
-from sqlalchemy.orm import declarative_base, sessionmaker
-from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
-from sqlalchemy.future import select
-import enum
-import json
-from cryptography.fernet import Fernet
 import os
+from datetime import datetime, timedelta
+import asyncio
+from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
+from sqlalchemy import Column, Integer, String, DateTime, Boolean, Float, select, ForeignKey
+from sqlalchemy.orm import declarative_base, sessionmaker, relationship
+from sqlalchemy.exc import NoSuchTableError, OperationalError
+from sqlalchemy import inspect
+from velayne.infra.config import get_settings
 
 Base = declarative_base()
-
-FERNET_KEY = os.getenv("FERNET_KEY", Fernet.generate_key())
-fernet = Fernet(FERNET_KEY)
-
-def encrypt(val):
-    if val is None:
-        return ""
-    return fernet.encrypt(val.encode()).decode()
-
-def decrypt(val):
-    if not val:
-        return ""
-    return fernet.decrypt(val.encode()).decode()
-
-class ExchangeEnum(enum.Enum):
-    binance = "binance"
-    bybit = "bybit"
-    okx = "okx"
-
-class StrategyDraftStatusEnum(enum.Enum):
-    submitted = "submitted"
-    approved = "approved"
-    rejected = "rejected"
-
-class PortfolioKindEnum(enum.Enum):
-    demo = "demo"
-    live = "live"
-
-class ApiKey(Base):
-    __tablename__ = "api_keys"
-    id = Column(Integer, primary_key=True)
-    user_id = Column(Integer, index=True)
-    exchange = Column(String, index=True)
-    api_key_enc = Column(String, nullable=False)
-    api_secret_enc = Column(String, nullable=False)
-    passphrase_enc = Column(String, nullable=True)
-    created_at = Column(DateTime, default=func.now())
-
-class StrategyPreference(Base):
-    __tablename__ = "strategy_preferences"
-    id = Column(Integer, primary_key=True)
-    user_id = Column(Integer, index=True)
-    enabled_codes = Column(JSON)
-    last_recommended = Column(JSON)
-    updated_at = Column(DateTime, default=func.now(), onupdate=func.now())
-
-class StrategyDraft(Base):
-    __tablename__ = "strategy_drafts"
-    id = Column(Integer, primary_key=True)
-    user_id = Column(Integer, index=True)
-    title = Column(String)
-    dsl_text = Column(Text)
-    status = Column(Enum(StrategyDraftStatusEnum), default=StrategyDraftStatusEnum.submitted)
-    notes = Column(Text)
-    created_at = Column(DateTime, default=func.now())
-    updated_at = Column(DateTime, default=func.now(), onupdate=func.now())
-
-class PublishedStrategy(Base):
-    __tablename__ = "published_strategies"
-    id = Column(Integer, primary_key=True)
-    author_user_id = Column(Integer)
-    code = Column(String, unique=True)
-    name = Column(String)
-    short_desc = Column(String)
-    dsl_text = Column(Text)
-    version = Column(String)
-    created_at = Column(DateTime, default=func.now())
-    updated_at = Column(DateTime, default=func.now(), onupdate=func.now())
-    is_featured = Column(Boolean, default=False)
-
-class BroadcastLog(Base):
-    __tablename__ = "broadcast_log"
-    id = Column(Integer, primary_key=True)
-    author_user_id = Column(Integer, index=True)
-    message = Column(Text)
-    created_at = Column(DateTime, default=func.now())
-    total_targets = Column(Integer)
-    sent_ok = Column(Integer)
-    sent_fail = Column(Integer)
-
-class AuditEvent(Base):
-    __tablename__ = "audit_events"
-    id = Column(Integer, primary_key=True)
-    user_id = Column(Integer, nullable=True)
-    event = Column(String)
-    meta = Column(JSON)
-    created_at = Column(DateTime, default=func.now())
-
-class PortfolioAccount(Base):
-    __tablename__ = "portfolio_accounts"
-    id = Column(Integer, primary_key=True)
-    user_id = Column(Integer, index=True)
-    kind = Column(Enum(PortfolioKindEnum), index=True)
-    balance = Column(Float, default=0.0)
-    created_at = Column(DateTime, default=func.now())
+settings = get_settings()
+DB_URL = settings.DB_URL
 
 class User(Base):
     __tablename__ = "users"
     id = Column(Integer, primary_key=True)
-    tg_id = Column(Integer, unique=True, index=True)
-    username = Column(String)
-    role = Column(String, default="user")  # 'user'|'editor'|'admin'
-    created_at = Column(DateTime, default=func.now())
+    tg_id = Column(Integer, unique=True)
+    created_at = Column(DateTime, default=datetime.utcnow)
+    sub_until = Column(DateTime, nullable=True)
+    achievements = relationship("Achievement", back_populates="user")
 
-# --- Session/engine boilerplate ---
-engine = create_async_engine("sqlite+aiosqlite:///data/velayne.db")
-SessionLocal = sessionmaker(bind=engine, class_=AsyncSession, expire_on_commit=False)
+class Trade(Base):
+    __tablename__ = "trades"
+    id = Column(Integer, primary_key=True)
+    ts = Column(DateTime, default=datetime.utcnow)
+    symbol = Column(String)
+    side = Column(String)
+    price = Column(Float)
+    amount = Column(Float)
+    pnl = Column(Float)
+    sandbox = Column(Boolean, default=True)
 
-def upsert_api_key(session, user_id, exchange, api_key_plain, secret_plain, passphrase_plain=None):
-    api_key_enc = encrypt(api_key_plain)
-    secret_enc = encrypt(secret_plain)
-    passphrase_enc = encrypt(passphrase_plain) if passphrase_plain else None
-    obj = session.query(ApiKey).filter_by(user_id=user_id, exchange=exchange).first()
-    if obj:
-        obj.api_key_enc = api_key_enc
-        obj.api_secret_enc = secret_enc
-        obj.passphrase_enc = passphrase_enc
-        obj.created_at = datetime.datetime.utcnow()
-    else:
-        obj = ApiKey(
-            user_id=user_id, exchange=exchange,
-            api_key_enc=api_key_enc, api_secret_enc=secret_enc,
-            passphrase_enc=passphrase_enc
+class Achievement(Base):
+    __tablename__ = "achievements"
+    id = Column(Integer, primary_key=True)
+    user_id = Column(Integer, ForeignKey("users.id"))
+    key = Column(String)
+    awarded_at = Column(DateTime, default=datetime.utcnow)
+    user = relationship("User", back_populates="achievements")
+
+engine = create_async_engine(DB_URL, echo=False, future=True)
+async_session = sessionmaker(bind=engine, expire_on_commit=False, class_=AsyncSession)
+
+async def init_db():
+    # Автообновление: добавление недостающих колонок/таблиц
+    async with engine.begin() as conn:
+        await conn.run_sync(Base.metadata.create_all)
+        # Автообновление колонок (только для SQLite)
+        inspector = inspect(conn.sync_connection())
+        # users.sub_until
+        cols = [col["name"] for col in inspector.get_columns("users")]
+        if "sub_until" not in cols:
+            await conn.execute("ALTER TABLE users ADD COLUMN sub_until DATETIME")
+        # achievements
+        if not inspector.has_table("achievements"):
+            await conn.run_sync(lambda c: Achievement.__table__.create(bind=c, checkfirst=True))
+
+async def get_or_create_user(tg_id: int) -> User:
+    async with async_session() as s:
+        res = await s.execute(select(User).where(User.tg_id == tg_id))
+        user = res.scalars().first()
+        if not user:
+            user = User(tg_id=tg_id)
+            s.add(user)
+            await s.commit()
+            await s.refresh(user)
+        return user
+
+async def get_user_sub_status(tg_id: int) -> dict:
+    async with async_session() as s:
+        res = await s.execute(select(User).where(User.tg_id == tg_id))
+        user = res.scalars().first()
+        if user and user.sub_until and user.sub_until > datetime.utcnow():
+            return {"active": True, "until": user.sub_until}
+        return {"active": False, "until": None}
+
+async def list_users(limit: int = 100) -> list[dict]:
+    async with async_session() as s:
+        res = await s.execute(select(User).order_by(User.id.desc()).limit(limit))
+        users = res.scalars().all()
+        return [{"tg_id": u.tg_id, "sub_until": u.sub_until} for u in users]
+
+async def get_last_trades(limit: int = 20) -> list[dict]:
+    async with async_session() as s:
+        res = await s.execute(select(Trade).order_by(Trade.id.desc()).limit(limit))
+        trades = res.scalars().all()
+        result = []
+        for t in reversed(trades):
+            # Автоконвертация ts если вдруг строка
+            ts = t.ts
+            if isinstance(ts, str):
+                try:
+                    ts = datetime.fromisoformat(ts)
+                except Exception:
+                    ts = datetime.utcnow()
+            result.append({
+                "ts": ts.strftime("%d.%m.%Y %H:%M"),
+                "symbol": t.symbol, "side": t.side, "price": t.price,
+                "amount": t.amount, "pnl": t.pnl, "sandbox": t.sandbox
+            })
+        return result
+
+async def append_trade_row(d: dict) -> None:
+    async with async_session() as s:
+        # ts может быть строкой или datetime
+        ts = d.get("ts", datetime.utcnow())
+        if isinstance(ts, str):
+            try:
+                ts = datetime.fromisoformat(ts)
+            except Exception:
+                ts = datetime.utcnow()
+        trade = Trade(
+            ts=ts,
+            symbol=d.get("symbol"),
+            side=d.get("side"),
+            price=d.get("price"),
+            amount=d.get("amount"),
+            pnl=d.get("pnl"),
+            sandbox=d.get("sandbox", True)
         )
-        session.add(obj)
-    session.commit()
-    return obj
+        s.add(trade)
+        await s.commit()
 
-def get_user_api_key(session, user_id, exchange):
-    obj = session.query(ApiKey).filter_by(user_id=user_id, exchange=exchange).first()
-    if not obj:
-        return None
-    return (
-        obj.exchange,
-        decrypt(obj.api_key_enc),
-        decrypt(obj.api_secret_enc),
-        decrypt(obj.passphrase_enc) if obj.passphrase_enc else None
-    )
+async def get_live_stats() -> dict:
+    async with async_session() as s:
+        res = await s.execute(select(Trade.pnl))
+        pnls = [r[0] for r in res.fetchall() if r[0] is not None]
+        pnl_abs = sum(pnls) if pnls else 0.0
+        trades = len(pnls)
+        pnl_pct = pnl_abs / 10000 * 100 if trades else 0.0
+        sharpe = (pnl_abs / (abs(pnl_abs) + 1e-8)) * 2 if trades else 0.0
+        maxdd = min(pnls) if pnls else 0.0
+        return dict(pnl_abs=pnl_abs, pnl_pct=pnl_pct, trades=trades, sharpe=sharpe, maxdd=maxdd)
 
-def upsert_strategy_pref(session, user_id, enabled_codes, last_recommended):
-    obj = session.query(StrategyPreference).filter_by(user_id=user_id).first()
-    if obj:
-        obj.enabled_codes = enabled_codes
-        obj.last_recommended = last_recommended
-        obj.updated_at = datetime.datetime.utcnow()
-    else:
-        obj = StrategyPreference(
-            user_id=user_id,
-            enabled_codes=enabled_codes,
-            last_recommended=last_recommended,
-        )
-        session.add(obj)
-    session.commit()
-    return obj
+async def award_achievement(user_id: int, key: str):
+    async with async_session() as s:
+        ach = Achievement(user_id=user_id, key=key)
+        s.add(ach)
+        await s.commit()
 
-def list_published_strategies(session):
-    return session.query(PublishedStrategy).order_by(PublishedStrategy.is_featured.desc(), PublishedStrategy.updated_at.desc()).all()
-
-def submit_strategy_draft(session, user_id, title, dsl_text):
-    draft = StrategyDraft(
-        user_id=user_id,
-        title=title,
-        dsl_text=dsl_text,
-        status=StrategyDraftStatusEnum.submitted,
-        created_at=datetime.datetime.utcnow(),
-        updated_at=datetime.datetime.utcnow(),
-    )
-    session.add(draft)
-    session.commit()
-    return draft.id
-
-def review_strategy_draft(session, draft_id, approve: bool, notes: str, publish_as: Optional[PublishedStrategy] = None):
-    draft = session.query(StrategyDraft).filter_by(id=draft_id).first()
-    if not draft:
-        return False
-    if approve:
-        draft.status = StrategyDraftStatusEnum.approved
-        if publish_as:
-            session.add(publish_as)
-    else:
-        draft.status = StrategyDraftStatusEnum.rejected
-    draft.notes = notes
-    draft.updated_at = datetime.datetime.utcnow()
-    session.commit()
-    return True
-
-def log_broadcast(author_user_id, message, total, ok, fail):
-    session = SessionLocal()
-    entry = BroadcastLog(
-        author_user_id=author_user_id,
-        message=message,
-        created_at=datetime.datetime.utcnow(),
-        total_targets=total,
-        sent_ok=ok,
-        sent_fail=fail
-    )
-    session.add(entry)
-    session.commit()
-    session.close()
-
-def write_audit(event: str, meta: dict, user_id: int | None = None):
-    session = SessionLocal()
-    entry = AuditEvent(
-        user_id=user_id,
-        event=event,
-        meta=meta,
-        created_at=datetime.datetime.utcnow()
-    )
-    session.add(entry)
-    session.commit()
-    session.close()
+async def get_user_achievements(user_id: int):
+    async with async_session() as s:
+        res = await s.execute(select(Achievement).where(Achievement.user_id == user_id))
+        return [a.key for a in res.scalars().all()]
