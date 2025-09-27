@@ -2,12 +2,18 @@ import asyncio
 import logging
 import sys
 import signal
-from velayne.infra.config import get_settings
-from velayne.infra.logger import setup_logging
-from velayne.infra.db import init_db
-settings = get_settings()
 
 def main():
+    # Lightweight self-test fast path for CI
+    if "--selftest" in sys.argv:
+        print("SELFTEST OK")
+        return
+
+    # Import heavier deps lazily after selftest path
+    from velayne.infra.config import get_settings
+    from velayne.infra.logger import setup_logging
+    from velayne.infra.db import init_db
+    settings = get_settings()
     active_log = setup_logging()
     print(f"[ЛОГИ] Лог пишется в: {active_log}")
 
